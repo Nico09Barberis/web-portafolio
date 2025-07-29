@@ -62,7 +62,7 @@ const WorkSection = ({ title, works }) => (
 
 const Works = () => {
   return (
-    <section className="bg-white text-black dark:bg-[#0b1d3a] dark:text-white py-12 px-4">
+    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white py-12 px-4">
       <div className="flex items-center justify-center">
         <ProjectNum />
       </div>

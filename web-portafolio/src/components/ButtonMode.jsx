@@ -19,7 +19,7 @@ const ButtonMode = () => {
   return (
     <button 
       onClick={() => setDarkMode(!darkMode)}
-      className="bg-white text-black hover:bg-[#969faf] dark:bg-[#0b1d3a] dark:text-white p-1 m-0 rounded-lg dark:hover:bg-[#3f5988]"
+      className="bg-white text-black hover:bg-[#969faf] dark:bg-[#0a192f] dark:text-white p-1 m-0 rounded-lg dark:hover:bg-[#3f5988]"
     >
       {darkMode ? <Sun /> : <Moon />}
     </button>

@@ -1,7 +1,14 @@
-import { FaReact, FaJava, FaNodeJs, FaDatabase, FaGitAlt } from "react-icons/fa";
+import {
+  FaReact,
+  FaJava,
+  FaNodeJs,
+  FaDatabase,
+  FaGitAlt,
+} from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiJavascript } from "react-icons/si";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const techSkills = [
   { icon: <FaReact size={32} />, name: "C" },
@@ -22,37 +29,45 @@ const certifications = [
     title: "Curso Full Stack MERN",
     provider: "Coderhouse",
     year: "2024",
-    link: "/cerfificados/curso",
+    link: "/certificados/curso-fullstack-mern.pdf",
   },
   {
     title: "JavaScript Avanzado",
     provider: "Udemy",
     year: "2023",
-    link: "/cerfificados/curso",
+    link: "/certificados/javascript-avanzado.pdf",
   },
   {
     title: "Desarrollo Web desde Cero",
     provider: "freeCodeCamp",
     year: "2022",
-    link: "/cerfificados/curso",
+    link: "/certificados/desarrollo-web.pdf",
   },
 ];
 
+
 const SkillsSection = () => {
   return (
-    <section className="bg-white dark:bg-[#0b1d3a] text-black dark:text-white py-10 px-4">
+    <section className="bg-white dark:bg-[#0a192f] text-black dark:text-white py-10 px-4">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Habilidades</h2>
 
         {/* Habilidades técnicas */}
         <div className="flex flex-wrap justify-center gap-8 mb-12">
           {techSkills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center gap-2 w-24">
+            <motion.div
+              key={index}
+              className="flex flex-col items-center gap-2 w-24"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.05 }}
+              whileHover={{ scale: 1.1 }}
+            >
               <div className="text-blue-600 dark:text-blue-400">
                 {skill.icon}
               </div>
               <p className="text-sm text-center">{skill.name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
@@ -63,9 +78,13 @@ const SkillsSection = () => {
           </h3>
           <ul className="space-y-2">
             {certifications.map((cert, index) => (
-              <li
+              <motion.li
                 key={index}
-                className="border border-gray-200 dark:border-gray-600 rounded-lg p-4"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="border border-gray-200 dark:border-gray-600 bg-white dark:bg-[#112240] rounded-lg p-4"
               >
                 <p className="font-semibold">{cert.title}</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -81,7 +100,8 @@ const SkillsSection = () => {
                     Ver certificado
                   </a>
                 )}
-              </li>
+              </motion.li>
+
             ))}
           </ul>
         </div>

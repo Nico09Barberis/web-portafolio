@@ -2,7 +2,8 @@ import HeroSection from "../components/HeroSection";
 import LastWorks from "../components/LastWorks";
 import Profile from "../components/Profile";
 import Publication from "../components/Publication";
-import PostImg from "../assets/works.png";
+import PostImg1 from "../assets/about-me-1.jpg";
+import PostImg2 from "../assets/about-me-2.jpg";
 import Social from "../components/Social";
 import ButtonMode from "../components/ButtonMode";
 
@@ -19,7 +20,7 @@ const Home = () => {
         <div className="w-full flex-1 border border-gray-600">
           <Profile />
           <HeroSection />
-          <section className="bg-white text-black dark:bg-[#0b1d3a] dark:text-white max-w-3xl mx-auto p-6 rounded-2xl">
+          <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white max-w-3xl mx-auto p-6 rounded-2xl">
             <h2 className="text-3xl font-bold mb-6 text-center">
               Hola a todos!
             </h2>
@@ -53,7 +54,7 @@ const Home = () => {
 
             <div className="mt-6">
               <img
-                src={PostImg}
+                src={PostImg1}
                 alt="imagen de acerca de mi"
                 className="object-cover w-full h-auto rounded-lg shadow-sm"
               />
@@ -70,13 +71,41 @@ const Home = () => {
               </p>
 
               <p>
-                Soy una persona muy activa; me cuesta quedarme quieto sin hacer
-                nada. Siempre estoy buscando algo que hacer, aprender o mejorar.
-                Ya sea resolviendo problemas, creando algo nuevo o simplemente
-                manteniéndome en movimiento, me gusta sentir que aprovecho al
-                máximo cada día.
+                Soy una persona proactiva y dinámica, con una marcada
+                inclinación por mantenerme en constante actividad. Me motiva
+                aprender, mejorar y asumir nuevos desafíos, ya sea resolviendo
+                problemas, desarrollando ideas o explorando nuevas habilidades.
+                Disfruto optimizar mi tiempo y aprovechar cada día al máximo.
               </p>
             </div>
+
+            <div className="mt-6">
+              <img
+                src={PostImg2}
+                alt="imagen de acerca de mi"
+                className="object-cover w-full h-auto rounded-lg shadow-sm"
+              />
+            </div>
+
+            <div className="mt-6 space-y-4 text-base leading-relaxed">
+              <p>
+                Fuera del mundo del desarrollo, me gusta disfrutar de las
+                pequeñas cosas que me recargan de energía. Tocar la guitarra es
+                una de mis pasiones: me permite desconectarme, expresarme y
+                seguir aprendiendo algo nuevo con cada acorde. También valoro
+                mucho compartir momentos con mis amigos, mi familia y mis
+                mascotas, que son una parte fundamental de mi vida.
+              </p>
+
+              <p>
+                Soy una persona proactiva y dinámica, con una marcada
+                inclinación por mantenerme en constante actividad. Me motiva
+                aprender, mejorar y asumir nuevos desafíos, ya sea resolviendo
+                problemas, desarrollando ideas o explorando nuevas habilidades.
+                Disfruto optimizar mi tiempo y aprovechar cada día al máximo.
+              </p>
+            </div>
+
           </section>
           <Social />
         </div>

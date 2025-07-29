@@ -1,10 +1,17 @@
 import PublicationImg from "../assets/works.png";
 import ProfilePublicationImg from "../assets/img-hero.png";
-import { Ellipsis, Heart, Link } from 'lucide-react';
+import { Ellipsis, Link } from 'lucide-react';
+import { useState } from "react";
+import { FaRegHeart } from "react-icons/fa";
 
-const Publication = ( {postImg, content} ) => {
+const Publication = ({ postImg, content }) => {
+
+  const [liked, setLiked] = useState(false);
+
+  const toggleLike = () => setLiked(!liked);
+
   return (
-    <section className="bg-white text-black hover:bg-red-50 dark:bg-[#0b1d3a] dark:text-white dark:hover:bg-[#2d3f61] max-w-3xl mx-auto p-4  rounded-lg">
+    <section className="bg-[#fefefe] text-black hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] max-w-3xl mx-auto mb-4 p-4 rounded-lg">
       <div className="max-w-3xl mx-auto mt-2 flex items-start gap-2">
         {/*Imagen pequeña a la derecha*/}
         <div className="w-28 h-28">
@@ -17,7 +24,7 @@ const Publication = ( {postImg, content} ) => {
         <div className="text-left">
           <div className="flex items-start gap-2">
             <p className="font-bold">Nico Barberis</p>
-            <p className="text-gray-400">@NicoBarberis</p>
+            <p className="text-gray-500 dark:text-gray-400">@NicoBarberis</p>
           </div>
           <h2 className="mb-2 text-2xl font-bold">Hello word!</h2>
           <p>{content}</p>
@@ -35,8 +42,14 @@ const Publication = ( {postImg, content} ) => {
       </div>
 
       <div className="flex items-center max-w-3xl mx-auto gap-1 mt-4 pr-8 justify-end">
-        <Heart size={36} className="m-2 p-1 rounded-lg hover:bg-[#3f5988]"/>
-        <Link size={36} className="cursor-pointer p-1 rounded-lg hover:bg-[#3f5988]"/>
+        <FaRegHeart
+          size={36}
+          onClick={toggleLike}
+          className={`m-2 p-1 rounded-lg cursor-pointer hover:scale-110 transition-colors duration-200 ${
+          liked ? "text-red-500" : "dark:text-white text-black"
+        }`}
+      />
+        <Link size={36} className="cursor-pointer p-1 rounded-lg hover:scale-110 transition-all"/>
       </div>
     </section>
   );

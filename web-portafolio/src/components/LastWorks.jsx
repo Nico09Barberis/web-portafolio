@@ -62,7 +62,7 @@ const LastWorks = () => {
   ];
 
   return (
-    <section className="bg-white text-black dark:bg-[#0b1d3a] dark:text-white max-w-3xl mx-auto p-4 rounded-lg">
+    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white max-w-3xl mx-auto p-4 rounded-lg">
       <div className="mt-2 flex flex-col lg:flex-row items-start gap-2 w-full">
         {/* Sección izquierda */}
         <div className="w-full lg:w-1/2 text-center lg:text-left p-4">

@@ -6,7 +6,7 @@ import SubscribeForm from "./Subs";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white text-black dark:bg-[#0b1d3a] dark:text-white mx-auto max-w-6xl py-8 px-4">
+    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white mx-auto max-w-6xl py-8 px-4">
       {/* Sección inferior */}
 
       <div className="flex-1">
@@ -20,12 +20,9 @@ const HeroSection = () => {
         </div>
 
         <div className="text-start mt-12 pl-12 mb-4">
-          <h2 className="text-3xl font-bold text-start">Niki Barberis</h2>
-          <p className="text-xl">Desarrollador web y amante de los gatos</p>
-          <p>
-            Desarrollador web y amante de los gatos, tambien me gusta pescar y
-            la joda. soy de escorpio
-          </p>
+          <h2 className="text-3xl font-bold text-start">Nicolas Barberis</h2>
+          <p className="text-xl">Tecnico Universitario en Programacion</p>
+          <p>Apasionado por la tecnología y la automatización, creo soluciones funcionales con código limpio y eficiente</p>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 sm:grid-rows-2 md:flex md:gap-6 items-center mt-4 font-semibold">
             <div className="flex items-center gap-1">
@@ -42,7 +39,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-1">
               <Cake size={20} />
-              <span>27 Nov. 2002</span>
+              <span>7 Nov. 2002</span>
             </div>
           </div>
         </div>

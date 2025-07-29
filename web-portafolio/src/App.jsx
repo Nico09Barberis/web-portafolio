@@ -7,7 +7,7 @@ import Skills from './pages/Skills';
 
 function App() {
   return (
-    <div className='bg-white text-black dark:bg-[#0b1d3a] dark:text-white'>
+    <div className='bg-white text-black dark:bg-[#0a192f] dark:text-white'>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
