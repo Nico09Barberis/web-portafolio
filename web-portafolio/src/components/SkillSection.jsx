@@ -26,31 +26,36 @@ const techSkills = [
 
 const certifications = [
   {
-    title: "Curso Full Stack MERN",
-    provider: "Coderhouse",
-    year: "2024",
-    link: "/certificados/curso-fullstack-mern.pdf",
-  },
-  {
-    title: "JavaScript Avanzado",
-    provider: "Udemy",
+    title: "Primeros pasos del desarrollo frontend",
+    provider: "Argentina Programa 4.0",
     year: "2023",
-    link: "/certificados/javascript-avanzado.pdf",
+    link: "/certificates/front-curse.pdf",
   },
   {
-    title: "Desarrollo Web desde Cero",
-    provider: "freeCodeCamp",
+    title: "Curso de Python",
+    provider: "CODERHOUSE",
     year: "2022",
-    link: "/certificados/desarrollo-web.pdf",
+    link: "../../public/certificates/python-curse.png",
+  },
+  {
+    title: "Programador de Arduino ",
+    provider: "Edutin Academy",
+    year: "2022",
+    link: "/certificates/arduino-curse.pdf",
   },
 ];
-
 
 const SkillsSection = () => {
   return (
     <section className="bg-white dark:bg-[#0a192f] text-black dark:text-white py-10 px-4">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Habilidades</h2>
+        <h2 className="text-3xl font-bold text-center mb-2">
+          Herramientas y tecnologías que utilizo
+        </h2>
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
+          Desde lo visual hasta lo funcional, estas son las herramientas que uso
+          para construir soluciones reales.
+        </p>
 
         {/* Habilidades técnicas */}
         <div className="flex flex-wrap justify-center gap-8 mb-12">
@@ -101,7 +106,6 @@ const SkillsSection = () => {
                   </a>
                 )}
               </motion.li>
-
             ))}
           </ul>
         </div>
