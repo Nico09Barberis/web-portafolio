@@ -3,7 +3,7 @@ import LastWorks from "../components/LastWorks";
 import Profile from "../components/Profile";
 import Publication from "../components/Publication";
 import PostImg from "../assets/works.png";
-import Post1 from "../assets/post1.jpg";
+import Post1 from "../assets/post1.jpeg";
 import Social from "../components/Social";
 import ButtonMode from "../components/ButtonMode";
 

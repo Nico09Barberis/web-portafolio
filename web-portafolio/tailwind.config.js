@@ -6,7 +6,31 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        autoRun3d: {
+          from: { transform: 'perspective(800px) rotateY(-360deg)' },
+          to: { transform: 'perspective(800px) rotateY(0deg)' },
+        },
+        animateBrightness: {
+          '10%': { filter: 'brightness(1)' },
+          '50%': { filter: 'brightness(0.1)' },
+          '90%': { filter: 'brightness(1)' },
+        }
+      },
+      animation: {
+        autoRun3d: 'autoRun3d 20s linear infinite',
+        animateBrightness: 'animateBrightness 20s linear infinite',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.transform-style-preserve-3d': {
+          transformStyle: 'preserve-3d',
+        },
+      });
+    }
+  ],
 }

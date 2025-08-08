@@ -32,7 +32,7 @@ const Publication = ({ postImg, content }) => {
             <img
               src={postImg}
               alt="imagen de publicacion"
-              className="object-cover w-full h-auto rounded-lg"
+              className="w-full h-[400px] object-cover rounded-lg"
             />
           </div>
         </div>

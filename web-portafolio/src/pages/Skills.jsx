@@ -1,15 +1,9 @@
 import HeroSection from "../components/HeroSection";
-import LastWorks from "../components/LastWorks";
 import Profile from "../components/Profile";
-import Publication from "../components/Publication";
-import PostImg from "../assets/works.png";
 import Social from "../components/Social";
 import ButtonMode from "../components/ButtonMode";
-import WorksImg from '../assets/works.png';
-import { ArrowRight } from 'lucide-react';
-import ProjectNum from "../components/ProjectNum";
-import Works from "../components/Works";
 import SkillsSection from "../components/SkillSection";
+
 
 const Skills = () => {
   return (

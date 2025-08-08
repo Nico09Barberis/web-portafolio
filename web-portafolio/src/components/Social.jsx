@@ -14,7 +14,7 @@ const Social = () => {
     </div>
     <div className="text-center p-2">
       <p className="text-gray-500 dark:text-gray-400">
-        © {new Date().getFullYear()} Nico Barberis. Todos los derechos reservados.
+        © {new Date().getFullYear()} Barberis Nicolas. Todos los derechos reservados.
       </p>
     </div>
     </section>

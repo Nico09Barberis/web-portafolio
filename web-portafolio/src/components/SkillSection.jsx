@@ -1,29 +1,22 @@
-import {
-  FaReact,
-  FaJava,
-  FaNodeJs,
-  FaDatabase,
-  FaGitAlt,
-} from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiJavascript } from "react-icons/si";
-import { TiHtml5 } from "react-icons/ti";
-import { IoLogoCss3 } from "react-icons/io5";
-import { motion } from "framer-motion";
-import { BsCCircleFill } from "react-icons/bs";
 
-const techSkills = [
-  { icon: <BsCCircleFill size={32} />, name: "C" },
-  { icon: <TiHtml5 size={32} />, name: "HTML" },
-  { icon: <IoLogoCss3 size={32} />, name: "CSS" },
-  { icon: <FaJava size={32} />, name: "Java" },
-  { icon: <FaReact size={32} />, name: "React" },
-  { icon: <FaNodeJs size={32} />, name: "Node.js" },
-  { icon: <SiTailwindcss size={32} />, name: "TailwindCSS" },
-  { icon: <SiJavascript size={32} />, name: "JavaScript" },
-  { icon: <SiMongodb size={32} />, name: "MongoDB" },
-  { icon: <FaDatabase size={32} />, name: "SQL / NoSQL" },
-  { icon: <FaGitAlt size={32} />, name: "Git" },
-];
+import { motion } from "framer-motion";
+import Carousel3D from "./carousel";
+
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaPython, FaGitAlt, FaDatabase, FaCloud, FaDocker} from "react-icons/fa";
+
+const items = [
+    { icon: <FaReact />, label: "React" },
+    { icon: <FaNodeJs />, label: "Node.js" },
+    { icon: <FaHtml5 />, label: "HTML" },
+    { icon: <FaCss3Alt />, label: "CSS" },
+    { icon: <FaJs />, label: "JavaScript" },
+    { icon: <FaPython />, label: "Python" },
+    { icon: <FaGitAlt />, label: "Git" },
+    { icon: <FaDatabase />, label: "SQL" },
+    { icon: <FaCloud />, label: "Cloud" },
+    { icon: <FaDocker />, label: "Docker" },
+  ];
+
 
 const certifications = [
   {
@@ -58,24 +51,9 @@ const SkillsSection = () => {
           para construir soluciones reales.
         </p>
 
-        {/* Habilidades técnicas */}
-        <div className="flex flex-wrap justify-center gap-8 mb-12">
-          {techSkills.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="flex flex-col items-center gap-2 w-24"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
-              whileHover={{ scale: 1.1 }}
-            >
-              <div className="text-blue-600 dark:text-blue-400">
-                {skill.icon}
-              </div>
-              <p className="text-sm text-center">{skill.name}</p>
-            </motion.div>
-          ))}
-        </div>
+        <div className="flex items-center justify-center">
+            <Carousel3D items={items} />
+          </div>
 
         {/* Certificaciones */}
         <div>
