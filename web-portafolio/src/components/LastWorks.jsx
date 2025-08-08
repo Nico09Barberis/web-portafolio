@@ -1,8 +1,9 @@
 import WorksImg from "../assets/works.png";
 import { ArrowRight } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import morseExpress from "../assets/morse-express.png";
 
-const WorkCard = ({ image, title, description, repoUrl }) => {
+const WorkCard = ({ image, title, description, demoUrl }) => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between border-b p-4 gap-4">
       {/* Imagen con efecto hover */}
@@ -13,13 +14,13 @@ const WorkCard = ({ image, title, description, repoUrl }) => {
           className="transition-all duration-300 group-hover:blur-sm group-hover:opacity-40 w-full"
         />
         <a
-          href={repoUrl}
+          href={demoUrl}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Ver repositorio de ${title}`}
           className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
-          <FaGithub size={32} className="text-black dark:text-white" />
+          <FaGlobe size={22} className="text-black dark:text-white" />
         </a>
       </div>
 
@@ -42,22 +43,22 @@ const WorkCard = ({ image, title, description, repoUrl }) => {
 const LastWorks = () => {
   const works = [
     {
-      image: WorksImg,
-      title: "Landing Sancor Seguros",
-      description: "Sitio institucional estático con contacto y formularios.",
-      repoUrl: "https://github.com/usuario/repositorio1",
+      image: morseExpress,
+      title: "Morse Express",
+      description: "Para uso educativo.",
+      demoUrl: "https://morse-traslator.vercel.app/",
     },
     {
       image: WorksImg,
       title: "E-commerce Ropa Urbana",
       description: "Frontend y backend integrados, pagos y carrito.",
-      repoUrl: "https://github.com/usuario/repositorio2",
+      demoUrl: "https://github.com/usuario/repositorio2",
     },
     {
       image: WorksImg,
       title: "Panel Admin ONG",
       description: "Dashboard interno para gestión de voluntarios.",
-      repoUrl: "https://github.com/usuario/repositorio3",
+      demoUrl: "https://github.com/usuario/repositorio3",
     },
   ];
 

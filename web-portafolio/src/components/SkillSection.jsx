@@ -9,9 +9,10 @@ import { SiTailwindcss, SiMongodb, SiJavascript } from "react-icons/si";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { BsCCircleFill } from "react-icons/bs";
 
 const techSkills = [
-  { icon: <FaReact size={32} />, name: "C" },
+  { icon: <BsCCircleFill size={32} />, name: "C" },
   { icon: <TiHtml5 size={32} />, name: "HTML" },
   { icon: <IoLogoCss3 size={32} />, name: "CSS" },
   { icon: <FaJava size={32} />, name: "Java" },
@@ -35,7 +36,7 @@ const certifications = [
     title: "Curso de Python",
     provider: "CODERHOUSE",
     year: "2022",
-    link: "../../public/certificates/python-curse.png",
+    link: "/certificates/python-curse.png",
   },
   {
     title: "Programador de Arduino ",

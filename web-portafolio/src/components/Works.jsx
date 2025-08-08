@@ -3,14 +3,15 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 import ProjectNum from "./ProjectNum";
 import EcommerceImg from "../assets/works.png";
 import OngImg from "../assets/works.png";
+import  morseExpress from "../assets/morse-express.png"
 
 // Proyectos personales
 const personalWorks = [
   {
-    img: EcommerceImg,
-    description: "Landing para Sancor Seguros",
-    repo: "https://github.com/usuario/proyecto1",
-    demo: "https://sancor-demo.vercel.app", // opcional
+    img: morseExpress,
+    description: "Morse Express, traductor de codigo morse",
+    repo: "https://github.com/Nico09Barberis/morse-translator.git",
+    demo: "https://morse-traslator.vercel.app/", // opcional
   },
   {
     img: EcommerceImg,
@@ -52,7 +53,7 @@ const WorkSection = ({ title, works }) => (
             <img
               src={work.img}
               alt={work.description}
-              className="w-full h-auto transition-all duration-300 group-hover:blur-sm group-hover:opacity-40"
+              className="w-[300px] h-[180px] object-cover transition-all duration-300 group-hover:blur-sm group-hover:opacity-40"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-2">
               {work.repo && (

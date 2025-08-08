@@ -89,23 +89,23 @@ const Home = () => {
 
             <div className="mt-6 space-y-4 text-base leading-relaxed">
               <p>
-                Fuera del mundo del desarrollo, me gusta disfrutar de las
-                pequeñas cosas que me recargan de energía. Tocar la guitarra es
-                una de mis pasiones: me permite desconectarme, expresarme y
-                seguir aprendiendo algo nuevo con cada acorde. También valoro
-                mucho compartir momentos con mis amigos, mi familia y mis
-                mascotas, que son una parte fundamental de mi vida.
+                Me caracterizo por una mentalidad de aprendizaje continuo,
+                buscando cada día ampliar mis conocimientos y habilidades. Me
+                capacito de forma constante y me mantengo al tanto de las nuevas
+                tecnologías, tendencias y herramientas en el ámbito del
+                desarrollo, la programación, la inteligencia artificial y el
+                mundo IT en general.
               </p>
 
               <p>
-                Soy una persona proactiva y dinámica, con una marcada
-                inclinación por mantenerme en constante actividad. Me motiva
-                aprender, mejorar y asumir nuevos desafíos, ya sea resolviendo
-                problemas, desarrollando ideas o explorando nuevas habilidades.
-                Disfruto optimizar mi tiempo y aprovechar cada día al máximo.
+                Considero fundamental evolucionar junto con el sector,
+                adaptándome a los cambios y adoptando innovaciones que aporten
+                valor. Estoy en un proceso permanente de crecimiento, no solo
+                como profesional, sino también a nivel personal, cultivando
+                habilidades que me permitan afrontar desafíos con una visión
+                integral, estratégica y humana.
               </p>
             </div>
-
           </section>
           <Social />
         </div>

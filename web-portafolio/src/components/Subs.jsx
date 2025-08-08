@@ -10,7 +10,7 @@ const SubscribeForm = () => {
       setMessage("Por favor, ingresa un email válido.");
       return;
     }
-    setMessage("¡Gracias por suscribirte!");
+    setMessage("¡Mensaje enviado con exito!");
     setEmail(""); // Limpia el campo después de enviar
   };
 
