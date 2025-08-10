@@ -31,6 +31,13 @@ export default {
           transformStyle: 'preserve-3d',
         },
       });
+    },
+    function ({ addUtilities }) {
+      addUtilities({
+        '.rotate3d-init': {
+          transform: 'rotate3d(1, -1, 1, 60deg)',
+        },
+      });
     }
   ],
 }

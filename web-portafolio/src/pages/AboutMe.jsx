@@ -6,6 +6,7 @@ import PostImg1 from "../assets/about-me-1.jpg";
 import PostImg2 from "../assets/about-me-2.jpg";
 import Social from "../components/Social";
 import ButtonMode from "../components/ButtonMode";
+import CardCV from "../components/cardCv";
 
 const Home = () => {
   return (
@@ -106,6 +107,16 @@ const Home = () => {
                 integral, estratégica y humana.
               </p>
             </div>
+
+            <div className="mt-6 space-y-4 text-base leading-relaxed">
+              <p>
+                Si querés conocer más sobre mi trayectoria, experiencia y
+                formación, te invito a descargar mi CV.
+              </p>
+            </div>
+
+            <CardCV />
+            
           </section>
           <Social />
         </div>

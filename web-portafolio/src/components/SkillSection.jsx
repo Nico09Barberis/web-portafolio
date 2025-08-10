@@ -1,22 +1,33 @@
-
 import { motion } from "framer-motion";
 import Carousel3D from "./carousel";
 
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaPython, FaGitAlt, FaDatabase, FaCloud, FaDocker} from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaDatabase,
+  FaJava,
+} from "react-icons/fa";
+
+import { SiMongodb, SiRender } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
 
 const items = [
-    { icon: <FaReact />, label: "React" },
-    { icon: <FaNodeJs />, label: "Node.js" },
-    { icon: <FaHtml5 />, label: "HTML" },
-    { icon: <FaCss3Alt />, label: "CSS" },
-    { icon: <FaJs />, label: "JavaScript" },
-    { icon: <FaPython />, label: "Python" },
-    { icon: <FaGitAlt />, label: "Git" },
-    { icon: <FaDatabase />, label: "SQL" },
-    { icon: <FaCloud />, label: "Cloud" },
-    { icon: <FaDocker />, label: "Docker" },
-  ];
-
+  { icon: <FaReact />, label: "React" },
+  { icon: <FaNodeJs />, label: "Node.js" },
+  { icon: <FaHtml5 />, label: "HTML" },
+  { icon: <FaCss3Alt />, label: "CSS" },
+  { icon: <FaJs />, label: "JavaScript" },
+  { icon: <FaGitAlt />, label: "Git" },
+  { icon: <FaDatabase />, label: "SQL" },
+  { icon: <FaJava />, label: "Java" },
+  { icon: <SiMongodb />, label: "MongoDB" },
+  { icon: <IoLogoVercel />, label: "Vercel" },
+  { icon: <SiRender />, label: "render" },
+];
 
 const certifications = [
   {
@@ -52,38 +63,79 @@ const SkillsSection = () => {
         </p>
 
         <div className="flex items-center justify-center">
-            <Carousel3D items={items} />
-          </div>
+          <Carousel3D items={items} />
+        </div>
+
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
+          Día a día me mantengo en constante aprendizaje, explorando nuevas
+          tecnologías y metodologías. Mi objetivo es identificar y utilizar las
+          herramientas más adecuadas para resolver de forma eficiente cualquier
+          desafío o proyecto que se presente, siempre buscando la mejor
+          combinación entre innovación, rendimiento y practicidad.
+        </p>
 
         {/* Certificaciones */}
-        <div>
-          <h3 className="text-2xl font-semibold mb-4 text-center">
-            Certificaciones & Cursos
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-white">
+            🎓 Certificaciones & Cursos
           </h3>
-          <ul className="space-y-2">
+          <ul className="space-y-4">
             {certifications.map((cert, index) => (
               <motion.li
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="border border-gray-200 dark:border-gray-600 bg-white dark:bg-[#112240] rounded-lg p-4"
+                className="group border border-gray-300 dark:border-gray-700 bg-gradient-to-br from-[#f7f9fa] to-[#e9ecef] 
+                  dark:from-[#0d1b2a] dark:to-[#112240] rounded-xl p-5 shadow-sm hover:shadow-lg 
+                  transition-all duration-300 transform hover:-translate-y-1"
               >
-                <p className="font-semibold">{cert.title}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {cert.provider} · {cert.year}
-                </p>
-                {cert.link && (
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-blue-600 hover:underline mt-1 inline-block"
+                <div className="flex items-start gap-4">
+                  {/* Icono */}
+                  <div
+                    className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-blue-100 dark:bg-blue-900 
+                          rounded-full text-blue-600 dark:text-blue-300 text-lg font-bold"
                   >
-                    Ver certificado
-                  </a>
-                )}
+                    {index + 1}
+                  </div>
+
+                  {/* Texto */}
+                  <div>
+                    <p className="font-semibold text-lg text-gray-800 dark:text-white">
+                      {cert.title}
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {cert.provider} · {cert.year}
+                    </p>
+
+                    {cert.link && (
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 
+                          mt-2 opacity-80 hover:opacity-100 hover:underline"
+                      >
+                        <span>Ver certificado</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={2}
+                          stroke="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M14 3h7m0 0v7m0-7L10 14"
+                          />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+                </div>
               </motion.li>
             ))}
           </ul>

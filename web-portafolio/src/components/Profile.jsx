@@ -1,8 +1,6 @@
 import React from "react";
 import ProfileImg from "../assets/profile-img.jpg";
 import BgProfile from "../assets/portada-img.jpg";
-import Nav from "./Nav";
-import { Rss, Cake, BriefcaseBusiness, CalendarDays, Link } from "lucide-react";
 
 const Profile = () => {
   return (

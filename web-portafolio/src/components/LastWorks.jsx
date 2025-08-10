@@ -2,6 +2,7 @@ import WorksImg from "../assets/works.png";
 import { ArrowRight } from "lucide-react";
 import { FaGlobe } from "react-icons/fa";
 import morseExpress from "../assets/morse-express.png";
+import clavePro from "../assets/clave-pro.png";
 
 const WorkCard = ({ image, title, description, demoUrl }) => {
   return (
@@ -28,7 +29,9 @@ const WorkCard = ({ image, title, description, demoUrl }) => {
       <div className="flex flex-col md:flex-row md:justify-between items-center w-full gap-2">
         <div className="text-center md:text-left">
           <h2 className="text-xl font-bold">{title}</h2>
-          <p className="text-sm text-gray-600 dark:text-gray-300">{description}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            {description}
+          </p>
         </div>
 
         {/* Flecha decorativa */}
@@ -45,28 +48,15 @@ const LastWorks = () => {
     {
       image: morseExpress,
       title: "Morse Express",
-      description: "Para uso educativo.",
+      description: "Traductor de codigo morse.",
       demoUrl: "https://morse-traslator.vercel.app/",
     },
     {
-      image: WorksImg,
-      title: "E-commerce Ropa Urbana",
-      description: "Frontend y backend integrados, pagos y carrito.",
-      demoUrl: "https://github.com/usuario/repositorio2",
+      image: clavePro,
+      title: "Clave Pro",
+      description: "Generador de contraseñas seguras",
+      demoUrl: "https://password-generator-smoky-gamma-95.vercel.app/",
     },
-    {
-      image: WorksImg,
-      title: "Panel Admin ONG",
-      description: "Dashboard interno para gestión de voluntarios.",
-      demoUrl: "https://github.com/usuario/repositorio3",
-    },
-  ];
-
-  const highlights = [
-    { label: "Proyectos finalizados", value: 12 },
-    { label: "Clientes satisfechos", value: 8 },
-    { label: "Repos públicos", value: 14 },
-    { label: "Empanadas comidas", value: 57 },
   ];
 
   return (
@@ -77,21 +67,11 @@ const LastWorks = () => {
           <h2 className="text-3xl font-bold mb-4">
             Últimos Trabajos Realizados
           </h2>
-          <p className="mb-4">
-            En el ámbito laboral, y también algunos proyectos donde combiné
-            creatividad, código y muchas empanadas de jamón y queso.
+          <p className="mb-4 text-gray-600 dark:text-gray-400">
+            Una selección de proyectos recientes que integran diseño funcional,
+            desarrollo eficiente y soluciones personalizadas para distintas
+            necesidades y contextos.
           </p>
-
-          <div className="grid grid-cols-2 gap-4">
-            {highlights.map((item, index) => (
-              <div key={index}>
-                <h3 className="text-3xl font-bold text-[#f8ca34]">
-                  {item.value}
-                </h3>
-                <p className="text-sm">{item.label}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Lista de trabajos */}

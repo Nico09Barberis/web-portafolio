@@ -21,8 +21,8 @@ const HeroSection = () => {
 
         <div className="text-start mt-12 pl-12 mb-4">
           <h2 className="text-3xl font-bold text-start">Nicolas Barberis</h2>
-          <p className="text-xl">Tecnico Universitario en Programacion</p>
-          <p>Apasionado por la tecnología y la automatización, creo soluciones funcionales con código limpio y eficiente</p>
+          <p className="text-xl font-semibold">Técnico Universitario en Programación</p>
+          <p className="font-semibold">Apasionado por la tecnología y la automatización, creo soluciones funcionales con código limpio y eficiente</p>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 sm:grid-rows-2 md:flex md:gap-6 items-center mt-4 font-semibold">
             <div className="flex items-center gap-1">
