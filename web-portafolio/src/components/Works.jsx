@@ -44,11 +44,11 @@ const WorkSection = ({ title, works }) => (
             transition={{ delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <div className="relative group w-full overflow-hidden rounded-lg shadow-md">
+            <div className="relative group w-full max-w-xs sm:max-w-full overflow-hidden rounded-lg shadow-md">
               <img
                 src={work.img}
                 alt={work.description}
-                className="object-cover transition-all duration-300 group-hover:blur-sm group-hover:opacity-40"
+                className="w-full h-48 sm:h-auto object-cover transition-all duration-300 group-hover:blur-sm group-hover:opacity-40"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-2">
                 {work.repo && (
