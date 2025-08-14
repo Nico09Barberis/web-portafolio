@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import ProjectNum from "./ProjectNum";
-import EcommerceImg from "../assets/works.png";
-import OngImg from "../assets/works.png";
+import { useEffect, useRef, useState } from "react";
+
 import morseExpress from "../assets/morse-express.png";
 import clavePro from "../assets/clave-pro.png";
 import reciclApp from "../assets/reciclapp.png";
@@ -10,99 +9,132 @@ import reciclApp from "../assets/reciclapp.png";
 // Proyectos personales
 const personalWorks = [
   {
+    title: "Morse Express",
+    description: "Traductor de código morse.",
     img: morseExpress,
-    description: "Morse Express, traductor de codigo morse",
     repo: "https://github.com/Nico09Barberis/morse-translator.git",
-    demo: "https://morse-traslator.vercel.app/", // opcional
+    demo: "https://morse-traslator.vercel.app/",
   },
   {
+    title: "Clave Pro",
+    description: "Generador de contraseñas seguras.",
     img: clavePro,
-    description: "Clave Pro, generador de contraseñas seguras",
     repo: "https://github.com/Nico09Barberis/password-generator.git",
-    demo: "https://password-generator-smoky-gamma-95.vercel.app/", // opcional
+    demo: "https://password-generator-smoky-gamma-95.vercel.app/",
   },
   {
+    title: "reciclApp",
+    description: "Aprende a reciclar correctamente.",
     img: reciclApp,
-    description: "reciclApp, aprende a reciclar correctamente",
     repo: "https://github.com/Nico09Barberis/app-reciclaje.git",
-    demo: "https://app-reciclaje-khaki.vercel.app/", // opcional
+    demo: "https://app-reciclaje-khaki.vercel.app/",
   },
 ];
 
 // Colaboraciones
 const collaborations = [];
 
+// Componente de tarjeta con título, descripción y efectos
+// Componente de tarjeta con título, descripción y tooltips en iconos
+const WorkCard = ({ title, description, img, repo, demo, index }) => {
+  const cardRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+    if (cardRef.current) observer.observe(cardRef.current);
+    return () => {
+      if (cardRef.current) observer.unobserve(cardRef.current);
+    };
+  }, []);
+
+  return (
+    <div
+      ref={cardRef}
+      className={`transform transition-all duration-500 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
+      <div className="relative group bg-white dark:bg-[#112240] rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+        {/* Imagen */}
+        <div className="w-full h-56 overflow-hidden rounded-t-xl">
+          <img
+            src={img}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          {/* Overlay con iconos */}
+          {(repo || demo) && (
+            <div className="absolute inset-0 flex items-center justify-center gap-4 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {repo && (
+                <a
+                  href={repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver repositorio en GitHub"
+                  title="Ver repositorio"
+                  className="text-white hover:text-gray-300 transition-colors"
+                >
+                  <FaGithub size={28} />
+                </a>
+              )}
+              {demo && (
+                <a
+                  href={demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver demo del proyecto"
+                  title="Ver proyecto"
+                  className="text-white hover:text-gray-300 transition-colors"
+                >
+                  <FaGlobe size={28} />
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Contenido: título y descripción */}
+        <div className="p-5 flex flex-col justify-between gap-2">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white">{title}</h3>
+          <p className="text-gray-600 dark:text-gray-300">{description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Sección de proyectos
 const WorkSection = ({ title, works }) => (
   <div className="mb-12">
-    <h3 className="text-2xl font-semibold mb-6 text-center">{title}</h3>
+    <h3 className="text-3xl font-bold mb-6 text-center">{title}</h3>
 
     {works.length === 0 ? (
       <p className="text-center text-gray-500 italic">
         🚧 Próximamente nuevas colaboraciones... trabajando en algo increíble.
       </p>
     ) : (
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-col gap-6">
         {works.map((work, index) => (
-          <motion.div
-            key={index}
-            className="flex flex-col items-center max-w-xs text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            viewport={{ once: true }}
-          >
-            <div className="relative group w-full max-w-xs sm:max-w-full overflow-hidden rounded-lg shadow-md">
-              <img
-                src={work.img}
-                alt={work.description}
-                className="w-full h-48 sm:h-auto object-cover transition-all duration-300 group-hover:blur-sm group-hover:opacity-40"
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-2">
-                {work.repo && (
-                  <motion.a
-                    href={work.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Ver repositorio en GitHub"
-                    whileHover={{ scale: 1.2, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaGithub
-                      size={28}
-                      className="text-black dark:text-white"
-                    />
-                  </motion.a>
-                )}
-                {work.demo && (
-                  <motion.a
-                    href={work.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Ver demo del proyecto"
-                    whileHover={{ scale: 1.2, rotate: -5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaGlobe size={24} className="text-black dark:text-white" />
-                  </motion.a>
-                )}
-              </div>
-            </div>
-            <p className="text-base mt-4">{work.description}</p>
-          </motion.div>
+          <WorkCard key={index} index={index} {...work} />
         ))}
       </div>
     )}
   </div>
 );
 
+// Componente principal Works
 const Works = () => {
   return (
-    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-4">Mis Trabajos</h2>
-      <p className="text-center max-w-2xl mx-auto text-gray-600 dark:text-gray-400 mb-10">
-        Aquí encontrarás una selección de mis proyectos personales y
-        colaboraciones. Desde herramientas útiles hasta desarrollos creativos,
-        cada uno refleja mi pasión por el código y el aprendizaje constante.
+    <section className="bg-white dark:bg-[#0a192f] text-black dark:text-white py-12 px-4 max-w-5xl mx-auto rounded-2xl">
+      <h2 className="text-4xl font-extrabold text-center mb-4">Mis Trabajos</h2>
+      <p className="text-center text-xl max-w-2xl mx-auto text-gray-600 dark:text-gray-300 mb-10">
+        Aquí encontrarás una selección de mis proyectos personales y colaboraciones. Desde herramientas útiles
+        hasta desarrollos creativos, cada uno refleja mi pasión por el código y el aprendizaje constante.
       </p>
 
       <WorkSection title="Proyectos Personales" works={personalWorks} />
