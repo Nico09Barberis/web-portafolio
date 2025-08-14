@@ -1,4 +1,3 @@
-import PublicationImg from "../assets/works.png";
 import ProfilePublicationImg from "../assets/profile-img.jpg";
 import { Ellipsis, Link } from "lucide-react";
 import { useState } from "react";
@@ -9,10 +8,11 @@ const Publication = ({ postImg, content }) => {
   const toggleLike = () => setLiked(!liked);
 
   return (
-    <section className="bg-[#fefefe] text-black hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] max-w-3xl mx-auto mb-4 p-2 rounded-lg">
-      <div className="max-w-4xl mx-auto mt-2 flex items-start gap-4">
-        {/* Avatar: contenedor fijo y recortado */}
-        <div className="w-12 h-12 flex-none rounded-full overflow-hidden border-2 border-white">
+    <section className="bg-[#fefefe] text-black hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] max-w-3xl mx-auto mb-4 p-4 rounded-lg">
+      <div className="flex items-start gap-4">
+        
+        {/* Avatar */}
+        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white flex-shrink-0">
           <img
             src={ProfilePublicationImg}
             alt="Imagen de perfil"
@@ -20,30 +20,42 @@ const Publication = ({ postImg, content }) => {
           />
         </div>
 
-        {/* Contenido principal: permitir que se encoja correctamente */}
-        <div className="text-left flex-1 min-w-0">
-          <div className="flex items-start gap-2">
+        {/* Contenido completo alineado al avatar */}
+        <div className="flex-1 min-w-0">
+          {/* Encabezado */}
+          <div className="flex items-center gap-2 flex-wrap">
             <p className="font-bold">Nico Barberis</p>
-            <p className="text-gray-500 dark:text-gray-300">@NicoBarberis</p>
+            <p className="text-gray-500 dark:text-gray-300 text-sm">@NicoBarberis</p>
           </div>
 
-          <h2 className="mb-2 text-2xl font-bold">Hello word!</h2>
-          <p className="text-justify text-gray-500 dark:text-gray-300">{content}</p>
-          <div className="mt-4">
-            <img
-              src={postImg}
-              alt="imagen de publicacion"
-              className="w-full max-h-[400px] object-cover rounded-lg"
-            />
-          </div>
+          {/* Título */}
+          <h2 className="mt-2 text-2xl font-bold">Hello word!</h2>
+
+          {/* Texto */}
+          <p className="mt-1 text-justify text-gray-500 dark:text-gray-300">
+            {content}
+          </p>
+
+          {/* Imagen del post */}
+          {postImg && (
+            <div className="mt-4">
+              <img
+                src={postImg}
+                alt="imagen de publicacion"
+                className="w-full max-h-[400px] object-cover rounded-lg"
+              />
+            </div>
+          )}
         </div>
 
+        {/* Botón opciones */}
         <div className="flex-shrink-0">
           <Ellipsis className="cursor-pointer" />
         </div>
       </div>
 
-      <div className="flex items-center max-w-3xl mx-auto gap-1 mt-4 pr-8 justify-end">
+      {/* Acciones */}
+      <div className="flex items-center justify-end gap-1 mt-4 pr-8">
         <FaRegHeart
           size={36}
           onClick={toggleLike}
