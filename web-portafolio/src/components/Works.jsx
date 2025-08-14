@@ -5,6 +5,7 @@ import EcommerceImg from "../assets/works.png";
 import OngImg from "../assets/works.png";
 import morseExpress from "../assets/morse-express.png";
 import clavePro from "../assets/clave-pro.png";
+import reciclApp from "../assets/reciclapp.png";
 
 // Proyectos personales
 const personalWorks = [
@@ -19,6 +20,12 @@ const personalWorks = [
     description: "Clave Pro, generador de contraseñas seguras",
     repo: "https://github.com/Nico09Barberis/password-generator.git",
     demo: "https://password-generator-smoky-gamma-95.vercel.app/", // opcional
+  },
+  {
+    img: reciclApp,
+    description: "reciclApp, aprende a reciclar correctamente",
+    repo: "https://github.com/Nico09Barberis/app-reciclaje.git",
+    demo: "https://app-reciclaje-khaki.vercel.app/", // opcional
   },
 ];
 
