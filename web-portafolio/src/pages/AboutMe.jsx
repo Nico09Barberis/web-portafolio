@@ -21,7 +21,7 @@ const Home = () => {
         <div className="w-full flex-1 border border-gray-600">
           <Profile />
           <HeroSection />
-          <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white max-w-3xl mx-auto p-6 rounded-2xl">
+          <section className="bg-white text-black text-justify dark:bg-[#0a192f] dark:text-white max-w-3xl mx-auto p-6 rounded-2xl">
             <h2 className="text-3xl font-bold mb-6 text-center">
               Hola a todos!
             </h2>

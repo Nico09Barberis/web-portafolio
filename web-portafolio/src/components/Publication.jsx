@@ -24,14 +24,12 @@ const Publication = ({ postImg, content }) => {
         <div className="text-left flex-1 min-w-0">
           <div className="flex items-start gap-2">
             <p className="font-bold">Nico Barberis</p>
-            <p className="text-gray-500 dark:text-gray-400">@NicoBarberis</p>
+            <p className="text-gray-500 dark:text-gray-300">@NicoBarberis</p>
           </div>
 
           <h2 className="mb-2 text-2xl font-bold">Hello word!</h2>
-          <p className="text-sm">{content}</p>
-
+          <p className="text-justify text-gray-500 dark:text-gray-300">{content}</p>
           <div className="mt-4">
-            {/* uso max-h para no forzar siempre 400px; ajustá si querés altura fija */}
             <img
               src={postImg}
               alt="imagen de publicacion"

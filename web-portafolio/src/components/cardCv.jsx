@@ -1,28 +1,20 @@
 import React from "react";
 
 const CardCV = () => {
-  const handleDownload = () => {
-    // Reemplaza con la ruta real de tu CV
-    const link = document.createElement("a");
-    link.href = "/cv.pdf"; // Debe estar en la carpeta public/
-    link.download = "Mi_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div className="flex items-center justify-center my-12">
       <div className="relative duration-500 hover:rotate-0 group rotate3d-init border-4 border-sky-900 overflow-hidden rounded-2xl h-96 w-64 bg-sky-800 p-5 flex flex-col items-start gap-4">
+        
         {/* Título */}
         <div className="text-gray-50">
           <span className="font-bold text-5xl">Jr</span>
           <p className="text-xs">Programador</p>
         </div>
 
-        {/* Botón funcional */}
-        <button
-          onClick={handleDownload}
+        {/* Botón de descarga */}
+        <a
+          href="/cv-BarberisNicolas.pdf" // Archivo en /public
+          download="cv-Barberis-Nicolas.pdf"
           className="duration-300 hover:bg-sky-900 border hover:text-gray-50 bg-gray-50 font-semibold text-sky-800 px-3 py-2 flex flex-row items-center gap-3"
         >
           Descargar CV
@@ -33,7 +25,7 @@ const CardCV = () => {
           >
             <path d="M22.1,77.9a4,4,0,0,1,4-4H73.9a4,4,0,0,1,0,8H26.1A4,4,0,0,1,22.1,77.9ZM35.2,47.2a4,4,0,0,1,5.7,0L46,52.3V22.1a4,4,0,1,1,8,0V52.3l5.1-5.1a4,4,0,0,1,5.7,0,4,4,0,0,1,0,5.6l-12,12a3.9,3.9,0,0,1-5.6,0l-12-12A4,4,0,0,1,35.2,47.2Z" />
           </svg>
-        </button>
+        </a>
 
         {/* Decoraciones */}
         <svg
