@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
-import morseExpress from "../assets/morse-express.png";
-import clavePro from "../assets/clave-pro.png";
-import reciclApp from "../assets/reciclapp.png";
+import morseExpress from "../assets/proyects/morse-express.png";
+import clavePro from "../assets/proyects/clave-pro.png";
+import reciclApp from "../assets/proyects/reciclapp.png";
 
 // Proyectos personales
 const personalWorks = [
