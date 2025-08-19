@@ -26,6 +26,7 @@ const Home = () => {
               content={post.content}
               projectLink={post.projectLink}
               postImages={post.images}
+              date={post.date}
             />
           ))}
 

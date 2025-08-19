@@ -23,7 +23,7 @@ const Home = () => {
           <HeroSection />
           <section className="bg-white text-black text-justify dark:bg-[#0a192f] dark:text-white max-w-3xl mx-auto p-6 rounded-2xl">
             <h2 className="text-3xl font-bold mb-6 text-center">
-              Hola a todos!
+              ¡Hola a todos!
             </h2>
 
             <div className="space-y-4 text-base leading-relaxed">

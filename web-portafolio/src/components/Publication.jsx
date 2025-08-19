@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import CarouselPost from "./CarouselPost";
 
-const Publication = ({ title, content, projectLink, postImages }) => {
+const Publication = ({ title, content, projectLink, postImages, date }) => {
   const [liked, setLiked] = useState(false);
   const toggleLike = () => setLiked(!liked);
 
@@ -42,7 +42,7 @@ const Publication = ({ title, content, projectLink, postImages }) => {
             {content}
           </p>
 
-       {/* Enlace al proyecto (opcional) */}
+          {/* Enlace al proyecto (opcional) */}
           {projectLink && (
             <div className="mt-1">
               <a
@@ -68,16 +68,28 @@ const Publication = ({ title, content, projectLink, postImages }) => {
         </div>
       </div>
 
-      {/* Acciones */}
-      <div className="flex items-center justify-end gap-1 mt-4 pr-8">
-        <FaRegHeart
-          size={36}
-          onClick={toggleLike}
-          className={`m-2 p-1 rounded-lg cursor-pointer hover:scale-110 transition-colors duration-200 ${
-            liked ? "text-red-500" : "dark:text-white text-black"
-          }`}
-        />
-        <Link size={28} className="cursor-pointer hover:scale-110" />
+      {/* Footer: fecha + acciones */}
+      <div className="flex items-center justify-between mt-4 px-2">
+        {/* Fecha a la izquierda */}
+        <p className="text-sm text-gray-500 dark:text-gray-300">
+          {new Date(date).toLocaleDateString("es-ES", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+
+        {/* Acciones a la derecha */}
+        <div className="flex items-center gap-2">
+          <FaRegHeart
+            size={32}
+            onClick={toggleLike}
+            className={`m-2 p-1 rounded-lg cursor-pointer hover:scale-110 transition-colors duration-200 ${
+              liked ? "text-red-500" : "dark:text-white text-black"
+            }`}
+          />
+          <Link size={26} className="cursor-pointer hover:scale-110" />
+        </div>
       </div>
     </section>
   );
