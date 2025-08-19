@@ -4,6 +4,25 @@
     "content": "¡Nuevo proyecto! He desarrollado una app para aprender código morse, que incluye un traductor, un apartado de juegos para practicar y un diccionario completo. La idea es que aprender sea divertido y dinámico, combinando teoría y práctica. Una excelente forma de ejercitar la mente y descubrir cómo la comunicación puede ser creativa.",
     "projectLink": "https://morse-traslator.vercel.app/",
     "images": ["/posts/post3-4.png", "/posts/post3-1.png", "/posts/post3-2.png", "/posts/post3-3.png"],
+    "date": "2025-08-13"
+  },
+{
+  "title": "Seguridad en un Click",
+  "content": "En la era digital, la seguridad de nuestras cuentas en línea es más importante que nunca. Por eso desarrollé un Generador de Contraseñas Seguras, una herramienta intuitiva y confiable que crea contraseñas robustas y únicas para cada usuario.\n\nLa aplicación permite:\n- Generar contraseñas aleatorias con letras, números y símbolos.\n- Ajustar la longitud y complejidad según tus necesidades.\n- Copiar las contraseñas rápidamente para su uso inmediato.\n\nEste proyecto no solo mejora la seguridad digital, sino que también refuerza buenas prácticas de gestión de contraseñas, evitando riesgos de hackeos y accesos no autorizados.",
+  "projectLink": "https://password-generator-smoky-gamma-95.vercel.app/",
+  "images": [
+    "/posts/post3-4.png",
+    "/posts/post3-1.png",
+    "/posts/post3-2.png",
+    "/posts/post3-3.png"
+  ],
+  "date": "2025-07-16"
+},
+  {
+    "title": "Aprendiendo código morse",
+    "content": "¡Nuevo proyecto! He desarrollado una app para aprender código morse, que incluye un traductor, un apartado de juegos para practicar y un diccionario completo. La idea es que aprender sea divertido y dinámico, combinando teoría y práctica. Una excelente forma de ejercitar la mente y descubrir cómo la comunicación puede ser creativa.",
+    "projectLink": "https://morse-traslator.vercel.app/",
+    "images": ["/posts/post3-4.png", "/posts/post3-1.png", "/posts/post3-2.png", "/posts/post3-3.png"],
     "date": "2025-07-08"
   },
   {

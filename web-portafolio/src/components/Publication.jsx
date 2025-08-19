@@ -3,10 +3,16 @@ import { Ellipsis, Link } from "lucide-react";
 import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import CarouselPost from "./CarouselPost";
+import React from "react";
 
 const Publication = ({ title, content, projectLink, postImages, date }) => {
   const [liked, setLiked] = useState(false);
   const toggleLike = () => setLiked(!liked);
+  const [expanded, setExpanded] = useState(false); // <- Estado para "Ver más"
+  const toggleExpand = () => setExpanded(!expanded);
+
+  const MAX_LINES = 3; // Cantidad de líneas que mostramos antes de "Ver más"
+  const contentLines = content.split("\n");
 
   return (
     <section className="bg-[#fefefe] text-black hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] max-w-3xl mx-auto mb-4 p-4 rounded-lg">
@@ -37,13 +43,20 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
             </h2>
           )}
 
-          {/* Texto */}
+          {/* Contenido */}
           <p className="mt-1 text-justify text-gray-500 dark:text-gray-300">
-            {content}
+            {(expanded ? contentLines : contentLines.slice(0, MAX_LINES)).map(
+              (line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              )
+            )}
           </p>
 
-          {/* Enlace al proyecto (opcional) */}
-          {projectLink && (
+          {/* Enlace al proyecto (solo cuando está expandido) */}
+          {expanded && projectLink && (
             <div className="mt-1">
               <a
                 href={projectLink}
@@ -53,6 +66,16 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
               >
                 Ver proyecto
               </a>
+            </div>
+          )}
+
+          {/* Botón Ver más / Ver menos (siempre debajo de todo) */}
+          {contentLines.length > MAX_LINES && (
+            <div
+              onClick={toggleExpand}
+              className="text-blue-500 dark:text-blue-400 cursor-pointer hover:underline mt-2"
+            >
+              {expanded ? "Ver menos" : "Ver más"}
             </div>
           )}
 

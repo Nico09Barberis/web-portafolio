@@ -10,7 +10,7 @@ const HeroSection = () => {
         {/* Información personal */}
         <div className="flex-1">
           {/* Botón Seguir */}
-          <div className="flex justify-end mb-4">
+          <div className="flex justify-end mb-4 pr-4 md:pr-12">
             <button className="flex items-center gap-2 bg-pink-600 px-4 py-2 rounded-full cursor-pointer hover:scale-105 transition">
               <span className="text-white text-lg font-bold tracking-wide">Seguir</span>
               <Rss size={20} color="white" />
