@@ -1,16 +1,17 @@
 [
   {
-    "title": "Aprendiendo código morse 📡",
+    "title": "Aprendiendo código morse",
     "content": "¡Nuevo proyecto! He desarrollado una app para aprender código morse, que incluye un traductor, un apartado de juegos para practicar y un diccionario completo. La idea es que aprender sea divertido y dinámico, combinando teoría y práctica. Una excelente forma de ejercitar la mente y descubrir cómo la comunicación puede ser creativa.",
+    "projectLink": "https://morse-traslator.vercel.app/",
     "images": ["/posts/post3-1.png", "/posts/post3-2.png", "/posts/post3-3.png"]
   },
   {
-    "title": "Graduación Universitaria 🎓",
-    "content": "¡Meta cumplida! Hoy puedo decir con orgullo que soy Técnico Universitario en Programacion. Fueron años de esfuerzo, noches sin dormir, desafíos que parecían imposibles... pero cada línea de código, cada error y cada aprendizaje valieron la pena. Gracias a quienes me acompañaron en el camino: familia, amigos, docentes y colegas. Este logro es solo el comienzo, el primer paso en un camino que recién empieza. A programar el futuro, ¡una solución a la vez! 💻🚀",
+    "title": "Graduación Universitaria",
+    "content": "¡Meta cumplida! Hoy puedo decir con orgullo que soy Técnico Universitario en Programacion. Fueron años de esfuerzo, noches sin dormir, desafíos que parecían imposibles... pero cada línea de código, cada error y cada aprendizaje valieron la pena. Gracias a quienes me acompañaron en el camino: familia, amigos, docentes y colegas. Este logro es solo el comienzo, el primer paso en un camino que recién empieza. A programar el futuro, ¡una solución a la vez!",
     "images": ["/posts/post2.png"]
   },
   {
-    "title": "Mi camino profesional 🚀",
+    "title": "Mi camino profesional",
     "content": "Aquí compartiré mis proyectos, avances, nuevos desafíos y aprendizajes día a día. Este espacio será un reflejo de mi vida profesional, donde podrás ver cómo crezco, enfrento retos y celebro cada logro. Desde pequeñas ideas hasta grandes proyectos, quiero que acompañes mi recorrido y descubras cómo la pasión por la tecnología y el desarrollo web se transforma en resultados concretos.",
     "images": ["/posts/post1.png"]
   }

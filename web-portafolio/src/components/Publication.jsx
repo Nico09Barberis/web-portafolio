@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import CarouselPost from "./CarouselPost";
 
-const Publication = ({ title, content, postImages }) => {
+const Publication = ({ title, content, projectLink, postImages }) => {
   const [liked, setLiked] = useState(false);
   const toggleLike = () => setLiked(!liked);
 
@@ -42,17 +42,19 @@ const Publication = ({ title, content, postImages }) => {
             {content}
           </p>
 
-          {/* Enlace debajo del contenido */}
-          <div className="mt-1">
-            <a
-              href="https://morse-traslator.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-blue-500 dark:text-blue-400 hover:underline"
-            >
-              Ver proyecto
-            </a>
-          </div>
+       {/* Enlace al proyecto (opcional) */}
+          {projectLink && (
+            <div className="mt-1">
+              <a
+                href={projectLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-blue-500 dark:text-blue-400 hover:underline"
+              >
+                Ver proyecto
+              </a>
+            </div>
+          )}
 
           {/* Imagen del post */}
           <div className="mt-4">

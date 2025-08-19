@@ -24,6 +24,7 @@ const Home = () => {
               key={index}
               title={post.title}
               content={post.content}
+              projectLink={post.projectLink}
               postImages={post.images}
             />
           ))}
