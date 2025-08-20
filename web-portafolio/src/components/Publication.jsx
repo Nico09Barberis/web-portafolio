@@ -55,7 +55,7 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
         )}
 
         {/* Contenido */}
-        <p className="mt-1 text-justify text-gray-600 dark:text-gray-300 whitespace-pre-line">
+        <p className="mt-1 text-start md:text-justify text-gray-600 dark:text-gray-300 whitespace-pre-line">
           {expanded
             ? content
             : contentLines.slice(0, MAX_LINES).join("\n")}
