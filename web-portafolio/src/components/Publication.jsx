@@ -73,7 +73,7 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
           {contentLines.length > MAX_LINES && (
             <div
               onClick={toggleExpand}
-              className="text-blue-500 dark:text-blue-400 cursor-pointer hover:underline mt-2"
+              className="inline-block text-blue-500 dark:text-blue-400 cursor-pointer hover:underline mt-2"
             >
               {expanded ? "Ver menos" : "Ver más"}
             </div>

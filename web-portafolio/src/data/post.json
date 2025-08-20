@@ -1,23 +1,18 @@
 [
   {
-    "title": "Aprendiendo código morse",
-    "content": "¡Nuevo proyecto! He desarrollado una app para aprender código morse, que incluye un traductor, un apartado de juegos para practicar y un diccionario completo. La idea es que aprender sea divertido y dinámico, combinando teoría y práctica. Una excelente forma de ejercitar la mente y descubrir cómo la comunicación puede ser creativa.",
-    "projectLink": "https://morse-traslator.vercel.app/",
-    "images": ["/posts/post3-4.png", "/posts/post3-1.png", "/posts/post3-2.png", "/posts/post3-3.png"],
-    "date": "2025-08-13"
+    "title": "Recicla y Aprende",
+    "content": "El cuidado del planeta empieza con pequeñas acciones, y una de las más importantes es aprender a separar correctamente los residuos. Para motivar y educar sobre el reciclaje, desarrollé una aplicación interactiva que combina información útil con entretenimiento.\n\nLa aplicación permite:\n- Conocer cómo separar correctamente la basura y los distintos tipos de residuos.\n- Acceder a información clara y sencilla sobre el impacto del reciclaje en el medio ambiente.\n- Jugar de manera interactiva para poner a prueba lo aprendido y reforzar buenos hábitos.\n\nEste proyecto busca generar conciencia ambiental de forma práctica y divertida, fomentando que cada persona pueda contribuir a un futuro más limpio y sostenible.",
+    "projectLink": "https://tulink-aqui.com/",
+    "images": ["/posts/post5-1.png", "/posts/post5-2.png"],
+    "date": "2025-08-19"
   },
-{
-  "title": "Seguridad en un Click",
-  "content": "En la era digital, la seguridad de nuestras cuentas en línea es más importante que nunca. Por eso desarrollé un Generador de Contraseñas Seguras, una herramienta intuitiva y confiable que crea contraseñas robustas y únicas para cada usuario.\n\nLa aplicación permite:\n- Generar contraseñas aleatorias con letras, números y símbolos.\n- Ajustar la longitud y complejidad según tus necesidades.\n- Copiar las contraseñas rápidamente para su uso inmediato.\n\nEste proyecto no solo mejora la seguridad digital, sino que también refuerza buenas prácticas de gestión de contraseñas, evitando riesgos de hackeos y accesos no autorizados.",
-  "projectLink": "https://password-generator-smoky-gamma-95.vercel.app/",
-  "images": [
-    "/posts/post3-4.png",
-    "/posts/post3-1.png",
-    "/posts/post3-2.png",
-    "/posts/post3-3.png"
-  ],
-  "date": "2025-07-16"
-},
+  {
+    "title": "Seguridad en un Click",
+    "content": "En la era digital, la seguridad de nuestras cuentas en línea es más importante que nunca. Por eso desarrollé un Generador de Contraseñas Seguras, una herramienta intuitiva y confiable que crea contraseñas robustas y únicas para cada usuario.\n\nLa aplicación permite:\n- Generar contraseñas aleatorias con letras, números y símbolos.\n- Ajustar la longitud y complejidad según tus necesidades.\n- Copiar las contraseñas rápidamente para su uso inmediato.\n\nEste proyecto no solo mejora la seguridad digital, sino que también refuerza buenas prácticas de gestión de contraseñas, evitando riesgos de hackeos y accesos no autorizados.",
+    "projectLink": "https://password-generator-smoky-gamma-95.vercel.app/",
+    "images": ["/posts/post4-1.png", "/posts/post4-2.png"],
+    "date": "2025-07-16"
+  },
   {
     "title": "Aprendiendo código morse",
     "content": "¡Nuevo proyecto! He desarrollado una app para aprender código morse, que incluye un traductor, un apartado de juegos para practicar y un diccionario completo. La idea es que aprender sea divertido y dinámico, combinando teoría y práctica. Una excelente forma de ejercitar la mente y descubrir cómo la comunicación puede ser creativa.",
