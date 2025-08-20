@@ -2,7 +2,7 @@
   {
     "title": "Recicla y Aprende",
     "content": "El cuidado del planeta empieza con pequeñas acciones, y una de las más importantes es aprender a separar correctamente los residuos. Para motivar y educar sobre el reciclaje, desarrollé una aplicación interactiva que combina información útil con entretenimiento.\n\nLa aplicación permite:\n- Conocer cómo separar correctamente la basura y los distintos tipos de residuos.\n- Acceder a información clara y sencilla sobre el impacto del reciclaje en el medio ambiente.\n- Jugar de manera interactiva para poner a prueba lo aprendido y reforzar buenos hábitos.\n\nEste proyecto busca generar conciencia ambiental de forma práctica y divertida, fomentando que cada persona pueda contribuir a un futuro más limpio y sostenible.",
-    "projectLink": "https://tulink-aqui.com/",
+    "projectLink": "https://app-reciclaje-khaki.vercel.app/",
     "images": ["/posts/post5-1.png", "/posts/post5-2.png"],
     "date": "2025-08-19"
   },
