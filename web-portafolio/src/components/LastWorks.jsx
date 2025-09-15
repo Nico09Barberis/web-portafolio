@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { FaGlobe } from "react-icons/fa";
 
-import morseExpress from "../assets/proyects/morse-express.png";
+import gestorTurnos from "../assets/proyects/gestor-turnos.png";
 import clavePro from "../assets/proyects/clave-pro.png";
 import reciclApp from "../assets/proyects/reciclapp.png";
 
@@ -77,10 +77,10 @@ const WorkCard = ({ image, title, description, demoUrl }) => {
 const LastWorks = () => {
   const works = [
     {
-      image: morseExpress,
-      title: "Morse Express",
-      description: "Traductor de código morse.",
-      demoUrl: "https://morse-traslator.vercel.app/",
+      image: gestorTurnos,
+      title: "Gestor de turnos",
+      description: "Sistema de gestión de turnos para profesionales y consultorios",
+      demoUrl: "https://gestor-turnos-flame.vercel.app/",
     },
     {
       image: clavePro,

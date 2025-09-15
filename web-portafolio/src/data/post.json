@@ -1,4 +1,11 @@
 [
+   {
+    "title": "Gestor de Turnos",
+    "content": "La organización y gestión de turnos es clave para consultorios y servicios que necesitan agendar citas de manera eficiente. Para optimizar este proceso, desarrollé una aplicación web que permite a pacientes y profesionales gestionar turnos de forma intuitiva y práctica.\n\nEntre sus funcionalidades destacan:\n- A los pacientes: agendar, editar y cancelar turnos de manera sencilla.\n- A los profesionales: ver los turnos del día, filtrar por fechas y clientes, y cancelar turnos cuando sea necesario.\n- Control de disponibilidad: los turnos ya cancelados o pasados se bloquean automáticamente, evitando errores o confusiones.\n\nEste proyecto busca mejorar la experiencia de usuarios y profesionales, haciendo que la gestión de citas sea rápida, clara y confiable.",
+    "projectLink": "https://gestor-turnos-flame.vercel.app/",
+    "images": ["/posts/post6-1.png", "/posts/post6-2.png", "/posts/post6-3.png", "/posts/post6-4.png"],
+    "date": "2025-09-02"
+  },
   {
     "title": "Recicla y Aprende",
     "content": "El cuidado del planeta empieza con pequeñas acciones, y una de las más importantes es aprender a separar correctamente los residuos. Para motivar y educar sobre el reciclaje, desarrollé una aplicación interactiva que combina información útil con entretenimiento.\n\nLa aplicación permite:\n- Conocer cómo separar correctamente la basura y los distintos tipos de residuos.\n- Acceder a información clara y sencilla sobre el impacto del reciclaje en el medio ambiente.\n- Jugar de manera interactiva para poner a prueba lo aprendido y reforzar buenos hábitos.\n\nEste proyecto busca generar conciencia ambiental de forma práctica y divertida, fomentando que cada persona pueda contribuir a un futuro más limpio y sostenible.",
