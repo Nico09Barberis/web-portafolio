@@ -11,7 +11,7 @@ import gestorTurnos from "../assets/proyects/gestor-turnos.png";
 const personalWorks = [
   {
     title: "Morse Express",
-    description: "Traductor de código morse.",
+    description: "Este proyecto es una app para aprender código morse que combina un traductor, juegos prácticos y un diccionario, haciendo que el aprendizaje sea divertido y dinámico.",
     img: morseExpress,
     repo: "https://github.com/Nico09Barberis/morse-translator.git",
     demo: "https://morse-traslator.vercel.app/",
@@ -19,7 +19,7 @@ const personalWorks = [
   },
   {
     title: "Clave Pro",
-    description: "Generador de contraseñas seguras.",
+    description: "Este proyecto es un Generador de Contraseñas Seguras que crea claves únicas y robustas, permitiendo ajustar su complejidad y longitud, con el objetivo de mejorar la seguridad digital y fomentar buenas prácticas en la gestión de contraseñas.",
     img: clavePro,
     repo: "https://github.com/Nico09Barberis/password-generator.git",
     demo: "https://password-generator-smoky-gamma-95.vercel.app/",
@@ -27,7 +27,7 @@ const personalWorks = [
   },
   {
     title: "reciclApp",
-    description: "Aprende a reciclar correctamente.",
+    description: "El proyecto es una aplicación interactiva que enseña a separar residuos y reciclar correctamente, combinando información clara con juegos para fomentar hábitos sostenibles de manera divertida.",
     img: reciclApp,
     repo: "https://github.com/Nico09Barberis/app-reciclaje.git",
     demo: "https://app-reciclaje-khaki.vercel.app/",
@@ -35,11 +35,10 @@ const personalWorks = [
   },
   {
     title: "Gestor de turnos",
-    description: "Aprende a reciclar correctamente.",
+    description: "Aplicación web que permite a pacientes y profesionales gestionar turnos de forma intuitiva y práctica.",
     img: gestorTurnos,
-    repo: "https://github.com/Nico09Barberis/app-reciclaje.git",
     demo: "https://gestor-turnos-flame.vercel.app/",
-    techs: ["React", "Tailwind", "Vite"],
+    techs: ["React", "Tailwind", "Vite", "Node", "Express", "MongoDB"],
   },
 ];
 
@@ -50,6 +49,7 @@ const collaborations = [];
 const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
   const cardRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -88,7 +88,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
                   rel="noopener noreferrer"
                   aria-label="Ver repositorio en GitHub"
                   title="Ver repositorio"
-                  className="text-white hover:text-gray-300 transition-colors pointer-events-auto"
+                  className="text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-300 transition-colors pointer-events-auto"
                 >
                   <FaGithub size={28} />
                 </a>
@@ -100,7 +100,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
                   rel="noopener noreferrer"
                   aria-label="Ver demo del proyecto"
                   title="Ver proyecto"
-                  className="text-white hover:text-gray-300 transition-colors pointer-events-auto"
+                  className="text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-300 transition-colors pointer-events-auto"
                 >
                   <FaGlobe size={28} />
                 </a>
@@ -111,9 +111,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
 
         {/* Contenido: título y descripción */}
         <div className="p-5 flex flex-col justify-between gap-4">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-            {title}
-          </h3>
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white">{title}</h3>
           <p className="text-gray-600 dark:text-gray-300">{description}</p>
 
           {techs && techs.length > 0 && (
@@ -121,7 +119,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
               {techs.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold px-3 py-1 rounded-full"
+                  className="text-gray-800 bg-gray-200 hover:bg-gray-300  dark:text-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700  text-xs font-semibold px-3 py-1 rounded-full"
                 >
                   {tech}
                 </span>
