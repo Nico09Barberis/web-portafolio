@@ -53,7 +53,7 @@ const Social = () => {
       </div>
 
       <div className="text-center p-2">
-        <p className="text-gray-500 dark:text-gray-400">
+        <p className="text-gray-900 dark:text-gray-100 font-semibold">
           © {new Date().getFullYear()} Barberis Nicolas. Todos los derechos
           reservados.
         </p>

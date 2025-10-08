@@ -49,13 +49,13 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
       <div className="mt-4">
         {/* Título */}
         {title && (
-          <h2 className="mt-2 text-2xl font-bold text-gray-600 dark:text-gray-300">
+          <h2 className="mt-2 text-2xl font-bold text-gray-900 dark:text-gray-100">
             {title}
           </h2>
         )}
 
         {/* Contenido */}
-        <p className="mt-1 text-start md:text-justify text-gray-600 dark:text-gray-300 whitespace-pre-line">
+        <p className="mt-1 text-justify text-gray-800 dark:text-gray-300 whitespace-pre-line">
           {expanded
             ? content
             : contentLines.slice(0, MAX_LINES).join("\n")}
