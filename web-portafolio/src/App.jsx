@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Project from './pages/Projects';
 import Skills from './pages/Skills';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         {/* Agregar más rutas aquí */}
       </Routes>
+
+      <ScrollToTopButton />
     </Router>
     </div>
   );
