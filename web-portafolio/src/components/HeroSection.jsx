@@ -29,27 +29,37 @@ const HeroSection = () => {
             </p>
 
             {/* Datos adicionales */}
-            <div className="grid grid-cols-4 xs:grid-cols-2 md:flex md:gap-6 items-center mt-4 font-semibold">
-              <button className="flex items-center gap-1 cursor-pointer">
-                <Link size={20} />
-                <span>/Links</span>
-              </button>
-              <div className="flex items-center gap-1">
-                <BriefcaseBusiness size={20} />
+            <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-6 items-center mt-4 font-semibold text-sm sm:text-base">
+              <li>
+                <button
+                  className="flex items-center gap-1 cursor-pointer hover:text-pink-600 transition-colors"
+                  aria-label="Ver enlaces personales"
+                >
+                  <Link size={20} />
+                  <span>/Links</span>
+                </button>
+              </li>
+
+              <li className="flex items-center gap-1">
+                <BriefcaseBusiness size={20} aria-hidden="true" />
                 <span>500Millas</span>
-              </div>
-              <a
-                href="mailto:barberisnicolas.dev@gmail.com"
-                className="flex items-center gap-1"
-              >
-                <Mail size={20} aria-hidden="true" />
-                <span>Contacto</span>
-              </a>
-              <div className="flex items-center gap-1">
-                <Cake size={20} />
+              </li>
+
+              <li>
+                <a
+                  href="mailto:barberisnicolas.dev@gmail.com"
+                  className="flex items-center gap-1 hover:text-pink-600 transition-colors"
+                >
+                  <Mail size={20} aria-hidden="true" />
+                  <span>Contacto</span>
+                </a>
+              </li>
+
+              <li className="flex items-center gap-1">
+                <Cake size={20} aria-hidden="true" />
                 <span>7 Nov. 02'</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
 
           {/* Formulario de suscripción */}
