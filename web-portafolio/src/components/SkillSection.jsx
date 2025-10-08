@@ -54,7 +54,7 @@ const SkillsSection = () => {
   return (
     <section className="bg-white dark:bg-[#0a192f]  py-10 px-4">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-extrabold text-center mb-2 text-black dark:text-white">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-2 text-black dark:text-white">
           Herramientas y tecnologías que utilizo
         </h2>
         <p className="text-justify text-gray-600 dark:text-gray-300 mb-8">
@@ -66,7 +66,7 @@ const SkillsSection = () => {
           <Carousel3D items={items} />
         </div>
 
-        <p className="text-justify text-gray-600 dark:text-gray-300 mb-8">
+        <p className="text-justify text-gray-600 dark:text-gray-300 my-8">
           Día a día me mantengo en constante aprendizaje, explorando nuevas
           tecnologías y metodologías. Mi objetivo es identificar y utilizar las
           herramientas más adecuadas para resolver de forma eficiente cualquier
@@ -76,7 +76,7 @@ const SkillsSection = () => {
 
         {/* Certificaciones */}
         <div className="max-w-3xl mx-auto">
-          <h3 className="text-3xl font-extrabold mb-6 text-center text-gray-800 dark:text-white">
+          <h3 className="text-2xl md:text-3xl font-extrabold mb-6 text-center text-gray-800 dark:text-white">
             🎓 Certificaciones & Cursos
           </h3>
           <ul className="space-y-4">

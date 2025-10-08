@@ -15,7 +15,7 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
   const contentLines = content.split("\n");
 
   return (
-    <section className="bg-[#fefefe] text-black hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] max-w-3xl mx-auto mt-4 mb-4 p-4 rounded-lg">
+    <section className="bg-[#fefefe] text-black hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] max-w-3xl mx-auto my-4 p-4 rounded-lg">
       {/* === FILA 1: Avatar + Encabezado + Opciones === */}
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-4 flex-1">

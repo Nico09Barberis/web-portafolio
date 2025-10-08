@@ -17,7 +17,7 @@ const SubscribeForm = () => {
   return (
     <div className="bg-white text-black dark:bg-[#0a192f] dark:text-white py-10 px-5 max-w-md mx-auto text-center rounded-lg">
       <h2 className="text-2xl font-bold mb-4">¿Te interesan mis proyectos?</h2>
-      <p className="text-gray-500 dark:text-gray-400 mb-5">Dejame tu correo y me pondre en contacto a la brevedad.</p>
+      <p className="text-gray-500 dark:text-gray-300 mb-5">Dejame tu correo y me pondre en contacto a la brevedad.</p>
 
       <form onSubmit={handleSubmit} className="flex items-center">
         <input

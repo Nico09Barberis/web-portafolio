@@ -29,7 +29,7 @@ const HeroSection = () => {
             </p>
 
             {/* Datos adicionales */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:flex md:gap-6 items-center mt-4 font-semibold">
+            <div className="grid grid-cols-4 xs:grid-cols-2 md:flex md:gap-6 items-center mt-4 font-semibold">
               <button className="flex items-center gap-1 cursor-pointer">
                 <Link size={20} />
                 <span>/Links</span>
@@ -47,7 +47,7 @@ const HeroSection = () => {
               </a>
               <div className="flex items-center gap-1">
                 <Cake size={20} />
-                <span>7 Nov. 2002</span>
+                <span>7 Nov. 02'</span>
               </div>
             </div>
           </div>
