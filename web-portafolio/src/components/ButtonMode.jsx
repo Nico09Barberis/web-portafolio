@@ -35,7 +35,7 @@ const ButtonMode = () => {
       {/* Ícono con animación de rotación */}
       <span
         className={`transform transition-transform duration-500 ${
-          darkMode ? "rotate-0" : "rotate-180"
+          darkMode ? "rotate-[360deg]" : "rotate-0"
         }`}
       >
         {darkMode ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
