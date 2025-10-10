@@ -29,7 +29,7 @@ const HeroSection = () => {
             </p>
 
             {/* Datos adicionales */}
-            <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-6 items-center mt-4 font-semibold text-sm sm:text-base">
+            <ul className="mt-4 font-semibold text-sm sm:text-base grid grid-cols-2 gap-4 md:flex md:items-center md:gap-6">
               <li>
                 <button
                   className="flex items-center gap-1 cursor-pointer hover:text-pink-600 transition-colors"
