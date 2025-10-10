@@ -5,7 +5,7 @@ import Social from "../components/Social";
 import ButtonMode from "../components/ButtonMode";
 import postsData from "../data/post.json";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="relative">
       {/* Botón de modo claro/oscuro en la esquina superior derecha */}
@@ -15,7 +15,7 @@ const Home = () => {
 
       <section className="flex flex-wrap max-w-4xl mx-auto">
         {/* Contenido principal */}
-        <div className="w-full flex-1 border border-gray-600">
+        <div className="w-full flex-1 border-x border-gray-300 dark:border-gray-600">
           <Profile />
           <HeroSection />
 
@@ -37,4 +37,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

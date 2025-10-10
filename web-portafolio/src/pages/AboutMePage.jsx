@@ -1,16 +1,10 @@
 import HeroSection from "../components/HeroSection";
-import LastWorks from "../components/LastWorks";
 import Profile from "../components/Profile";
-import Publication from "../components/Publication";
-import PostImg from "../assets/works.png";
 import Social from "../components/Social";
 import ButtonMode from "../components/ButtonMode";
-import WorksImg from '../assets/works.png';
-import { ArrowRight } from 'lucide-react';
-import ProjectNum from "../components/ProjectNum";
-import Works from "../components/Works";
+import AboutMe from "../components/AboutMe";
 
-const Project = () => {
+const AboutMePage = () => {
   return (
     <div className="relative">
       {/* Botón de modo claro/oscuro en la esquina superior derecha */}
@@ -18,14 +12,12 @@ const Project = () => {
         <ButtonMode />
       </div>
 
-      <section className="max-w-4xl mx-auto">
+      <section className="flex flex-wrap max-w-4xl mx-auto">
         {/* Contenido principal */}
-        <div className="w-full border border-gray-600">
+        <div className="w-full flex-1 border-x border-gray-300 dark:border-gray-600">
           <Profile />
           <HeroSection />
-
-          <LastWorks />      
-          <Works />
+          <AboutMe />        
           <Social />
         </div>
       </section>
@@ -33,4 +25,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default AboutMePage;

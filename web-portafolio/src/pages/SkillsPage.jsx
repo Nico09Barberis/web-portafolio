@@ -5,7 +5,7 @@ import ButtonMode from "../components/ButtonMode";
 import SkillsSection from "../components/SkillSection";
 
 
-const Skills = () => {
+const SkillsPage = () => {
   return (
     <div className="relative">
       {/* Botón de modo claro/oscuro en la esquina superior derecha */}
@@ -15,7 +15,7 @@ const Skills = () => {
 
       <section className="flex flex-wrap max-w-4xl mx-auto">
         {/* Contenido principal */}
-        <div className="w-full flex-1 border border-gray-600">
+        <div className="w-full flex-1 border-x border-gray-300 dark:border-gray-600">
           <Profile />
           <HeroSection />
           <SkillsSection />
@@ -26,4 +26,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsPage;
