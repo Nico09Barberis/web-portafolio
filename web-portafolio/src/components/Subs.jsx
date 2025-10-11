@@ -15,8 +15,8 @@ const SubscribeForm = () => {
   };
 
   return (
-    <div className="bg-white text-black dark:bg-[#0a192f] dark:text-white py-10 px-5 max-w-md mx-auto text-center rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">¿Te interesan mis proyectos?</h2>
+    <div className="bg-white text-black dark:bg-[#0a192f] dark:text-white py-10 px-5 max-w-xl mx-auto text-center rounded-lg">
+      <h2 className="text-2xl mb-2">¿Te interesan mis proyectos?</h2>
       <p className="text-gray-800 dark:text-gray-100 mb-5">Dejame tu correo y me pondre en contacto a la brevedad.</p>
 
       <form onSubmit={handleSubmit} className="flex items-center">
@@ -31,7 +31,7 @@ const SubscribeForm = () => {
         />
         <button
           type="submit"
-          className="w-1/2 rounded-full rounded-tl-none rounded-bl-none bg-blue-500 hover:bg-blue-600 transition p-3  font-bold text-white cursor-pointer"
+          className="w-1/2 rounded-full rounded-tl-none rounded-bl-none bg-blue-500 hover:bg-blue-600 transition p-3 text-white cursor-pointer"
         >
           Enviar
         </button>

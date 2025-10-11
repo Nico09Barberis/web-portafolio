@@ -6,12 +6,12 @@ import Social from "../components/Social";
 const AboutMe = () => {
   return (
     <section className="bg-white text-black text-justify dark:bg-[#0a192f] dark:text-white max-w-3xl mx-auto p-6">
-      <h2 className="text-3xl font-bold mb-6 text-center">
+      <h2 className="text-3xl font-pressStart mb-6 text-center">
         ¡Hola a todos!
       </h2>
 
       {/* Párrafos principales */}
-      <div className="space-y-4 text-base leading-relaxed">
+      <div className="font-shareTechMono space-y-4 text-base leading-relaxed">
         <p>
           Soy Técnico Universitario en Programación, apasionado por la
           tecnología y el desarrollo de software. Disfruto profundamente
@@ -48,7 +48,7 @@ const AboutMe = () => {
       </div>
 
       {/* Segunda parte del texto */}
-      <div className="mt-6 space-y-4 text-base leading-relaxed">
+      <div className="font-shareTechMono mt-6 space-y-4 text-base leading-relaxed">
         <p>
           Fuera del mundo del desarrollo, me gusta disfrutar de las
           pequeñas cosas que me recargan de energía. Tocar la guitarra es
@@ -77,7 +77,7 @@ const AboutMe = () => {
       </div>
 
       {/* Última parte del texto */}
-      <div className="mt-6 space-y-4 text-base leading-relaxed">
+      <div className="font-shareTechMono mt-6 space-y-4 text-base leading-relaxed">
         <p>
           Me caracterizo por una mentalidad de aprendizaje continuo,
           buscando cada día ampliar mis conocimientos y habilidades. Me

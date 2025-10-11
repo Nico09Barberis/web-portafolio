@@ -4,14 +4,14 @@ import SubscribeForm from "./Subs";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white mx-auto max-w-6xl py-8 px-4">
+    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white mx-auto max-w-6xl font-audiowide py-8 px-4">
       <div className="flex flex-col lg:flex-row items-center gap-10">
         {/* Información personal */}
         <div className="flex-1">
           {/* Botón Seguir */}
           <div className="flex justify-end mb-4 pr-4 md:pr-12">
             <button className="flex items-center gap-2 bg-pink-600 px-4 py-2 rounded-full cursor-pointer hover:scale-105 transition">
-              <span className="text-white text-lg font-bold tracking-wide">
+              <span className="text-white text-base font-bold tracking-wide">
                 Seguir
               </span>
               <Rss size={20} color="white" />
@@ -19,17 +19,17 @@ const HeroSection = () => {
           </div>
 
           <div className="text-left mt-12 pl-4 md:pl-12">
-            <h2 className="text-3xl font-bold">Nicolás Barberis</h2>
-            <p className="text-xl font-semibold mt-1">
+            <h2 className="text-3xl">Nicolás Barberis</h2>
+            <p className="text-xl mt-1">
               Técnico Universitario en Programación
             </p>
-            <p className="font-semibold mt-2">
+            <p className="mt-2">
               Apasionado por la tecnología y la automatización, creo soluciones
               funcionales con código limpio y eficiente.
             </p>
 
             {/* Datos adicionales */}
-            <ul className="mt-4 font-semibold text-sm sm:text-base grid grid-cols-2 gap-4 md:flex md:items-center md:gap-6">
+            <ul className="mt-4  text-sm grid grid-cols-2 gap-4 md:flex md:items-center md:gap-6">
               <li>
                 <button
                   className="flex items-center gap-1 cursor-pointer hover:text-pink-600 transition-colors"

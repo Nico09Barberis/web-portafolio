@@ -14,7 +14,7 @@ const Social = () => {
         >
           <FaEnvelope
             size={46}
-            className="bg-white text-gray-500 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
+            className="bg-white text-gray-700 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
           />
         </a>
 
@@ -25,7 +25,7 @@ const Social = () => {
         >
           <FaInstagram
             size={46}
-            className="bg-white text-gray-500 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
+            className="bg-white text-gray-700 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
           />
         </a>
 
@@ -36,7 +36,7 @@ const Social = () => {
         >
           <FaGithubSquare
             size={46}
-            className="bg-white text-gray-500 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
+            className="bg-white text-gray-700 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
           />
         </a>
 
@@ -47,13 +47,13 @@ const Social = () => {
         >
           <FaLinkedin
             size={46}
-            className="bg-white text-gray-500 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
+            className="bg-white text-gray-700 hover:bg-[#bae6fd] dark:bg-[#0a192f] dark:text-white dark:hover:bg-[#112240] p-2 hover:scale-110 rounded-lg"
           />
         </a>
       </div>
 
-      <div className="text-center p-2">
-        <p className="text-gray-900 dark:text-gray-100 font-semibold">
+      <div className="text-center p-2 font-audiowide">
+        <p className="text-gray-700 dark:text-gray-100 text-sm md:text-base">
           © {new Date().getFullYear()} Barberis Nicolas. Todos los derechos
           reservados.
         </p>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Carousel3D from "./carousel";
+import Carousel3D from "./Carousel3D";
 
 import {
   FaReact,
@@ -52,21 +52,21 @@ const certifications = [
 
 const SkillsSection = () => {
   return (
-    <section className="bg-white dark:bg-[#0a192f]  py-10 px-4">
+    <section className="bg-white dark:bg-[#0a192f] py-10 px-4 font-audiowide">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-2 text-black dark:text-gray-100">
+        <h2 className="text-2xl md:text-3xl text-center mb-2 text-black dark:text-gray-100">
           Herramientas y tecnologías que utilizo
         </h2>
-        <p className="text-justify text-gray-900 dark:text-gray-100 mb-8">
+        <p className="text-center text-gray-900 dark:text-gray-100 max-w-2xl mx-auto mb-8">
           Desde lo visual hasta lo funcional, estas son las herramientas que uso
           para construir soluciones reales.
         </p>
 
-        <div className="flex items-center justify-center">
+        <div className="font-quantico font-semibold flex items-center justify-center">
           <Carousel3D items={items} />
         </div>
 
-        <p className="text-justify text-gray-900 dark:text-gray-100 my-8">
+        <p className="text-justify text-gray-900 dark:text-gray-100 max-w-2xl mx-auto my-8">
           Día a día me mantengo en constante aprendizaje, explorando nuevas
           tecnologías y metodologías. Mi objetivo es identificar y utilizar las
           herramientas más adecuadas para resolver de forma eficiente cualquier
@@ -76,8 +76,8 @@ const SkillsSection = () => {
 
         {/* Certificaciones */}
         <div className="max-w-3xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-extrabold mb-6 text-center text-gray-900 dark:text-gray-100">
-            🎓 Certificaciones & Cursos
+          <h3 className="text-2xl md:text-3xl mb-6 text-center text-gray-900 dark:text-gray-100">
+            Certificaciones & Cursos
           </h3>
           <ul className="space-y-4">
             {certifications.map((cert, index) => (
@@ -102,7 +102,7 @@ const SkillsSection = () => {
 
                   {/* Texto */}
                   <div>
-                    <p className="font-semibold text-lg text-gray-800 dark:text-white">
+                    <p className="text-lg text-gray-800 dark:text-white">
                       {cert.title}
                     </p>
                     <p className="text-sm text-gray-600 dark:text-gray-400">

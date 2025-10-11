@@ -110,16 +110,16 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
         </div>
 
         {/* Contenido: título y descripción */}
-        <div className="p-5 flex flex-col justify-between gap-4">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white">{title}</h3>
-          <p className="text-gray-600 dark:text-gray-300">{description}</p>
+        <div className="p-5 flex flex-col justify-between gap-2">
+          <h3 className="text-xl text-gray-900 dark:text-white">{title}</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-2">{description}</p>
 
           {techs && techs.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {techs.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="text-gray-800 bg-gray-200 hover:bg-gray-300  dark:text-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700  text-xs font-semibold px-3 py-1 rounded-full"
+                  className="text-gray-800 bg-gray-200 hover:bg-gray-300  dark:text-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700  text-xs px-3 py-1 rounded-full"
                 >
                   {tech}
                 </span>
@@ -132,7 +132,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center2 text-blue-600 dark:text-blue-400 font-semibold group hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+              className="inline-flex items-center mt-2 text-blue-600 dark:text-blue-400 group hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
             >
               Ver proyecto
               <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
@@ -147,7 +147,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
 // Sección de proyectos
 const WorkSection = ({ title, works }) => (
   <div className="mb-12">
-    <h3 className="text-3xl font-bold mb-6 text-center">{title}</h3>
+    <h3 className="text-3xl mb-6 text-center">{title}</h3>
 
     {works.length === 0 ? (
       <p className="text-center text-gray-500 italic">
@@ -166,8 +166,8 @@ const WorkSection = ({ title, works }) => (
 // Componente principal Works
 const Works = () => {
   return (
-    <section className="bg-white dark:bg-[#0a192f] py-12 px-4 max-w-5xl mx-auto rounded-2xl">
-      <h2 className="text-3xl font-extrabold text-center mb-4">Mis Trabajos</h2>
+    <section className="bg-white dark:bg-[#0a192f] py-12 px-4 max-w-5xl mx-auto rounded-2xl font-audiowide">
+      <h2 className="text-3xl text-center mb-4">Mis Trabajos</h2>
       <p className="text-md md:text-lg text-center max-w-2xl mx-auto text-gray-900 dark:text-gray-100 mb-10">
         Aquí encontrarás una selección de mis proyectos personales y
         colaboraciones. Desde herramientas útiles hasta desarrollos creativos,

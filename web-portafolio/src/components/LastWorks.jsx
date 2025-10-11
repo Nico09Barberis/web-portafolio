@@ -52,16 +52,16 @@ const WorkCard = ({ image, title, description, demoUrl }) => {
 
         {/* Contenido */}
         <div className="p-5 flex flex-col justify-between gap-3">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+          <h3 className="text-xl text-gray-900 dark:text-white">
             {title}
           </h3>
-          <p className="text-gray-600 dark:text-gray-300">{description}</p>
+          <p className="text-gray-900 dark:text-gray-100">{description}</p>
           <div>
             <a
               href={demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center mt-2 text-blue-600 dark:text-blue-400 font-semibold group hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+              className="inline-flex items-center mt-2 text-blue-600 dark:text-blue-400 group hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
             >
               Ver proyecto
               <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
@@ -97,12 +97,12 @@ const LastWorks = () => {
   ];
 
   return (
-    <section className="bg-white dark:bg-[#0a192f] text-black dark:text-white max-w-5xl mx-auto p-8 rounded-2xl">
+    <section className="bg-white dark:bg-[#0a192f] text-black dark:text-white max-w-5xl mx-auto p-8 rounded-2xl font-audiowide">
       
       {/* Descripción general */}
       <div className="mb-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-extrabold mb-4">Últimos Trabajos Realizados</h2>
-        <p className="text-gray-900 dark:text-gray-100 text-base md:text-lg">
+        <h2 className="text-2xl md:text-3xl mb-4">Últimos Trabajos Realizados</h2>
+        <p className="text-gray-900 dark:text-gray-100 max-w-2xl mx-auto text-base md:text-lg">
           Una selección de proyectos recientes que integran diseño funcional,
           desarrollo eficiente y soluciones personalizadas para distintas
           necesidades y contextos.

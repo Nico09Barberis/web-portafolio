@@ -3,7 +3,6 @@ import { Ellipsis, Link } from "lucide-react";
 import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import CarouselPost from "./CarouselPost";
-import React from "react";
 
 const Publication = ({ title, content, projectLink, postImages, date }) => {
   const [liked, setLiked] = useState(false);
@@ -31,8 +30,8 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
 
           {/* Encabezado */}
           <div>
-            <p className="font-bold">Nico Barberis</p>
-            <p className="text-gray-500 dark:text-gray-300 text-sm">
+            <p className="font-quantico">Nico Barberis</p>
+            <p className="font-quantico text-gray-500 dark:text-gray-300 text-sm">
               @NicoBarberis
             </p>
           </div>
@@ -49,13 +48,13 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
       <div className="mt-4">
         {/* Título */}
         {title && (
-          <h2 className="mt-2 text-2xl font-bold text-gray-900 dark:text-gray-100">
+          <h2 className="mt-2 text-2xl font-quantico text-gray-900 dark:text-gray-100">
             {title}
           </h2>
         )}
 
         {/* Contenido */}
-        <p className="mt-1 text-justify text-gray-800 dark:text-gray-300 whitespace-pre-line">
+        <p className="font-quantico mt-1 text-justify text-gray-800 dark:text-gray-300 whitespace-pre-line">
           {expanded
             ? content
             : contentLines.slice(0, MAX_LINES).join("\n")}
@@ -68,7 +67,7 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
               href={projectLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-blue-500 dark:text-blue-400 hover:underline"
+              className="font-quantico inline-block text-blue-500 dark:text-blue-400 hover:underline"
             >
               Ver proyecto
             </a>
@@ -79,7 +78,7 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
         {contentLines.length > MAX_LINES && (
           <div
             onClick={toggleExpand}
-            className="inline-block text-blue-500 dark:text-blue-400 cursor-pointer hover:underline mt-2"
+            className="font-quantico inline-block text-blue-500 dark:text-blue-400 cursor-pointer hover:underline mt-2"
           >
             {expanded ? "Ver menos" : "Ver más"}
           </div>
@@ -92,7 +91,7 @@ const Publication = ({ title, content, projectLink, postImages, date }) => {
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-4 px-2">
-          <p className="text-sm text-gray-500 dark:text-gray-300">
+          <p className="font-quantico text-sm text-gray-500 dark:text-gray-300">
             {new Date(date).toLocaleDateString("es-ES", {
               year: "numeric",
               month: "long",
