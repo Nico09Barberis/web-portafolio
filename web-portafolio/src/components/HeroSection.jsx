@@ -4,7 +4,7 @@ import SubscribeForm from "./Subs";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white mx-auto max-w-6xl font-audiowide py-8 px-4">
+    <section className="bg-white text-black dark:bg-[#0a192f] dark:text-white mx-auto max-w-6xl font-audiowide py-8 px-2">
       <div className="flex flex-col lg:flex-row items-center gap-10">
         {/* Información personal */}
         <div className="flex-1">
