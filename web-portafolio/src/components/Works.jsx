@@ -112,7 +112,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
         {/* Contenido: título y descripción */}
         <div className="p-5 flex flex-col justify-between gap-2">
           <h3 className="text-xl text-gray-900 dark:text-white">{title}</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-2">{description}</p>
+          <p className="text-gray-600 text-sm md:text-base dark:text-gray-300 mb-2">{description}</p>
 
           {techs && techs.length > 0 && (
             <div className="flex flex-wrap gap-2">
@@ -167,8 +167,8 @@ const WorkSection = ({ title, works }) => (
 const Works = () => {
   return (
     <section className="bg-white dark:bg-[#0a192f] py-12 px-4 max-w-5xl mx-auto rounded-2xl font-audiowide">
-      <h2 className="text-3xl text-center mb-4">Mis Trabajos</h2>
-      <p className="text-md md:text-lg text-center max-w-2xl mx-auto text-gray-900 dark:text-gray-100 mb-10">
+      <h2 className="text-2xl md:text-3xl text-center mb-4">Mis Trabajos</h2>
+      <p className="text-base md:text-lg text-justify md:text-center max-w-2xl mx-auto text-gray-900 dark:text-gray-100 mb-10">
         Aquí encontrarás una selección de mis proyectos personales y
         colaboraciones. Desde herramientas útiles hasta desarrollos creativos,
         cada uno refleja mi pasión por el código y el aprendizaje constante.

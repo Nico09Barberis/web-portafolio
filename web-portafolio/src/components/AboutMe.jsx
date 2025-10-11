@@ -6,7 +6,7 @@ import Social from "../components/Social";
 const AboutMe = () => {
   return (
     <section className="bg-white text-black text-justify dark:bg-[#0a192f] dark:text-white max-w-3xl mx-auto p-6">
-      <h2 className="text-3xl font-pressStart mb-6 text-center">
+      <h2 className="text-xl md:text-3xl font-pressStart mb-6 text-center">
         ¡Hola a todos!
       </h2>
 

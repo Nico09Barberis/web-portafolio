@@ -102,7 +102,7 @@ const LastWorks = () => {
       {/* Descripción general */}
       <div className="mb-8 text-center">
         <h2 className="text-2xl md:text-3xl mb-4">Últimos Trabajos Realizados</h2>
-        <p className="text-gray-900 dark:text-gray-100 max-w-2xl mx-auto text-base md:text-lg">
+        <p className="text-gray-900 dark:text-gray-100 max-w-2xl mx-auto text-justify md:text-center text-base md:text-lg">
           Una selección de proyectos recientes que integran diseño funcional,
           desarrollo eficiente y soluciones personalizadas para distintas
           necesidades y contextos.
