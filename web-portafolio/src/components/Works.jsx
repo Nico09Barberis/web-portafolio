@@ -147,7 +147,7 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
 // Sección de proyectos
 const WorkSection = ({ title, works }) => (
   <div className="mb-12">
-    <h3 className="text-3xl mb-6 text-center">{title}</h3>
+    <h3 className="text-2xl md:text-3xl mb-6 text-center">{title}</h3>
 
     {works.length === 0 ? (
       <p className="text-center text-gray-500 italic">

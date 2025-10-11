@@ -19,11 +19,11 @@ const HeroSection = () => {
           </div>
 
           <div className="text-left mt-12 pl-4 md:pl-12">
-            <h2 className="text-3xl">Nicolás Barberis</h2>
-            <p className="text-xl mt-1">
+            <h2 className="text-2xl md:text-3xl">Nicolás Barberis</h2>
+            <p className="text-lg md:text-xl mt-1">
               Técnico Universitario en Programación
             </p>
-            <p className="mt-2">
+            <p className="mt-2 text-sm md:text-base">
               Apasionado por la tecnología y la automatización, creo soluciones
               funcionales con código limpio y eficiente.
             </p>
