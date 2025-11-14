@@ -1,4 +1,3 @@
-import { FaGithub, FaGlobe } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -6,12 +5,15 @@ import morseExpress from "../assets/proyects/morse-express.png";
 import clavePro from "../assets/proyects/clave-pro.png";
 import reciclApp from "../assets/proyects/reciclapp.png";
 import gestorTurnos from "../assets/proyects/gestor-turnos.png";
+import tienda500millas from "../assets/proyects/500millas.png";
+import unlook from "../assets/proyects/unlook.png";
 
 // Proyectos personales
 const personalWorks = [
   {
     title: "Morse Express",
-    description: "Este proyecto es una app para aprender código morse que combina un traductor, juegos prácticos y un diccionario, haciendo que el aprendizaje sea divertido y dinámico.",
+    description:
+      "Este proyecto es una app para aprender código morse que combina un traductor, juegos prácticos y un diccionario, haciendo que el aprendizaje sea divertido y dinámico.",
     img: morseExpress,
     repo: "https://github.com/Nico09Barberis/morse-translator.git",
     demo: "https://morse-traslator.vercel.app/",
@@ -19,7 +21,8 @@ const personalWorks = [
   },
   {
     title: "Clave Pro",
-    description: "Este proyecto es un Generador de Contraseñas Seguras que crea claves únicas y robustas, permitiendo ajustar su complejidad y longitud, con el objetivo de mejorar la seguridad digital y fomentar buenas prácticas en la gestión de contraseñas.",
+    description:
+      "Este proyecto es un Generador de Contraseñas Seguras que crea claves únicas y robustas, permitiendo ajustar su complejidad y longitud, con el objetivo de mejorar la seguridad digital y fomentar buenas prácticas en la gestión de contraseñas.",
     img: clavePro,
     repo: "https://github.com/Nico09Barberis/password-generator.git",
     demo: "https://password-generator-smoky-gamma-95.vercel.app/",
@@ -27,7 +30,8 @@ const personalWorks = [
   },
   {
     title: "reciclApp",
-    description: "El proyecto es una aplicación interactiva que enseña a separar residuos y reciclar correctamente, combinando información clara con juegos para fomentar hábitos sostenibles de manera divertida.",
+    description:
+      "El proyecto es una aplicación interactiva que enseña a separar residuos y reciclar correctamente, combinando información clara con juegos para fomentar hábitos sostenibles de manera divertida.",
     img: reciclApp,
     repo: "https://github.com/Nico09Barberis/app-reciclaje.git",
     demo: "https://app-reciclaje-khaki.vercel.app/",
@@ -35,10 +39,28 @@ const personalWorks = [
   },
   {
     title: "Gestor de turnos",
-    description: "Aplicación web que permite a pacientes y profesionales gestionar turnos de forma intuitiva y práctica.",
+    description:
+      "Aplicación web que permite a pacientes y profesionales gestionar turnos de forma intuitiva y práctica.",
     img: gestorTurnos,
     demo: "https://gestor-turnos-flame.vercel.app/",
     techs: ["React", "Tailwind", "Vite", "Node", "Express", "MongoDB"],
+  },
+  {
+    title: "Ecommerce Un Look",
+    description:
+      "Tienda online de indumentaria urbana y deportiva. Diseño moderno, catálogo dinámico y experiencia de compra optimizada para dispositivos móviles.",
+    img: unlook,
+    demo: "https://unlook.ar/",
+    techs: ["TiendaNube", "Google Tag Manager", "Google Analytics 4"],
+  },
+  {
+    title: "500 millas",
+    
+    description:
+      "Página web institucional para una empresa dedicada a la producción de alfajores santafesinos y panificados artesanales. Incluye secciones de inicio, productos y mas.",
+    img: tienda500millas,
+    demo: "https://500millasarg.com.ar/",
+    techs: ["React", "Tailwind", "Vite", "Google forms"],
   },
 ];
 
@@ -46,10 +68,9 @@ const personalWorks = [
 const collaborations = [];
 
 // Componente de tarjeta con título, descripción y tooltips en iconos
-const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
+const WorkCard = ({ title, description, img, demo, techs, index }) => {
   const cardRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -78,41 +99,15 @@ const WorkCard = ({ title, description, img, repo, demo, techs, index }) => {
             alt={title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          {/* Overlay con iconos */}
-          {(repo || demo) && (
-            <div className="absolute inset-0 flex items-center justify-center gap-4 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-              {repo && (
-                <a
-                  href={repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Ver repositorio en GitHub"
-                  title="Ver repositorio"
-                  className="text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-300 transition-colors pointer-events-auto"
-                >
-                  <FaGithub size={28} />
-                </a>
-              )}
-              {demo && (
-                <a
-                  href={demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Ver demo del proyecto"
-                  title="Ver proyecto"
-                  className="text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-300 transition-colors pointer-events-auto"
-                >
-                  <FaGlobe size={28} />
-                </a>
-              )}
-            </div>
-          )}
+      
         </div>
 
         {/* Contenido: título y descripción */}
         <div className="p-5 flex flex-col justify-between gap-2">
           <h3 className="text-xl text-gray-900 dark:text-white">{title}</h3>
-          <p className="text-gray-600 text-sm md:text-base dark:text-gray-300 mb-2">{description}</p>
+          <p className="text-gray-600 text-sm md:text-base dark:text-gray-300 mb-2">
+            {description}
+          </p>
 
           {techs && techs.length > 0 && (
             <div className="flex flex-wrap gap-2">
@@ -166,7 +161,7 @@ const WorkSection = ({ title, works }) => (
 // Componente principal Works
 const Works = () => {
   return (
-    <section className="bg-white dark:bg-[#0a192f] py-12 px-4 max-w-5xl mx-auto rounded-2xl font-audiowide">
+    <section className="bg-white dark:bg-[#0a192f] py-12 px-4 md:px-12 max-w-5xl mx-auto rounded-2xl font-audiowide">
       <h2 className="text-2xl md:text-3xl text-center mb-4">Mis Trabajos</h2>
       <p className="text-base md:text-lg text-justify md:text-center max-w-2xl mx-auto text-gray-900 dark:text-gray-100 mb-10">
         Aquí encontrarás una selección de mis proyectos personales y

@@ -3,6 +3,7 @@ import Profile from "../components/Profile";
 import Social from "../components/Social";
 import ButtonMode from "../components/ButtonMode";
 import SkillsSection from "../components/SkillSection";
+import TargetTechs from "../components/TargetTechs";
 
 
 const SkillsPage = () => {
@@ -18,6 +19,7 @@ const SkillsPage = () => {
         <div className="w-full flex-1 border-x border-gray-300 dark:border-gray-600">
           <Profile />
           <HeroSection />
+          <TargetTechs />
           <SkillsSection />
           <Social />
         </div>
