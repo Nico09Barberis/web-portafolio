@@ -2,6 +2,8 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaGitAlt } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiVite, SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
+import { DiMongodb } from "react-icons/di";
 
 export default function TargetTechs() {
   // EJEMPLO: 12 tecnologías personalizadas
@@ -16,8 +18,8 @@ export default function TargetTechs() {
     { title: "NodeJS", icon: <FaNodeJs /> },
     { title: "Git", icon: <FaGitAlt /> },
     { title: "Next.js", icon: <SiNextdotjs /> },
-    { title: "UI/UX", icon: "🎨" },
-    { title: "Design", icon: "✨" },
+    { title: "Vercel", icon: <IoLogoVercel /> },
+    { title: "MongoDB", icon: <DiMongodb /> },
   ];
 
   return (

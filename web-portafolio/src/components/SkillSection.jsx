@@ -1,32 +1,31 @@
 import { motion } from "framer-motion";
 import Carousel3D from "./Carousel3D";
+import TargetTechs from "./TargetTechs";
 
 import {
-  FaReact,
-  FaNodeJs,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaGitAlt,
-  FaDatabase,
-  FaJava,
-} from "react-icons/fa";
-
-import { SiMongodb, SiRender } from "react-icons/si";
-import { IoLogoVercel } from "react-icons/io5";
+  SiGooglefonts,
+  SiCloudinary,
+  SiGoogleforms,
+  SiCanva,
+  SiAdobeillustrator,
+  SiPostman,
+} from "react-icons/si";
+import { RiNotionFill } from "react-icons/ri";
+import { DiGoogleAnalytics } from "react-icons/di";
+import { IoLogoFirebase } from "react-icons/io5";
+import { FaDrawPolygon } from "react-icons/fa";
 
 const items = [
-  { icon: <FaReact />, label: "React" },
-  { icon: <FaNodeJs />, label: "Node.js" },
-  { icon: <FaHtml5 />, label: "HTML" },
-  { icon: <FaCss3Alt />, label: "CSS" },
-  { icon: <FaJs />, label: "JavaScript" },
-  { icon: <FaGitAlt />, label: "Git" },
-  { icon: <FaDatabase />, label: "SQL" },
-  { icon: <FaJava />, label: "Java" },
-  { icon: <SiMongodb />, label: "MongoDB" },
-  { icon: <IoLogoVercel />, label: "Vercel" },
-  { icon: <SiRender />, label: "render" },
+  { icon: <DiGoogleAnalytics />, label: "Google Analytics" },
+  { icon: <SiCanva />, label: "Canva" },
+  { icon: <SiPostman />, label: "Postman" },
+  { icon: <RiNotionFill />, label: "Notion" },
+  { icon: <SiCloudinary />, label: "Cloudinary" },
+  { icon: <SiGoogleforms />, label: "Google Forms" },
+  { icon: <SiAdobeillustrator />, label: "Adobe Ilustrator" },
+  { icon: <IoLogoFirebase />, label: "Firebase" },
+  { icon: <SiGooglefonts />, label: "Google Fonts" },
+  { icon: <FaDrawPolygon />, label: "Drawio" },
 ];
 
 const certifications = [
@@ -54,15 +53,48 @@ const SkillsSection = () => {
   return (
     <section className="bg-white dark:bg-[#0a192f] py-10 px-4 font-audiowide">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl md:text-3xl text-center mb-2 text-black dark:text-gray-100">
+        <h1 className="text-2xl md:text-3xl text-center mb-2 text-black dark:text-gray-100">
           Herramientas y tecnologías que utilizo
-        </h2>
+        </h1>
         <p className="text-center text-gray-900 dark:text-gray-100 max-w-2xl mx-auto mb-8">
-          Desde lo visual hasta lo funcional, estas son las herramientas que uso
-          para construir soluciones reales.
+          Desde lo visual hasta lo funcional, estas son las tecnologías que
+          utilizo para crear soluciones eficientes, estables y orientadas a las
+          necesidades reales de cada proyecto. Me apasiona mantenerme
+          actualizado y seguir perfeccionándome día a día, incorporando nuevas
+          herramientas, buenas prácticas y enfoques que potencien la calidad de
+          mi trabajo y la experiencia de quienes utilizan mis desarrollos.
         </p>
 
-        <div className="font-quantico font-semibold flex items-center justify-center">
+        <TargetTechs />
+
+        <h2 className="text-2xl md:text-3xl text-center mb-2 text-black dark:text-gray-100">
+          Otras herramientas y tecnologías que utilizo
+        </h2>
+        <p className="text-center text-gray-900 dark:text-gray-100 max-w-2xl mx-auto mb-8">
+          En mis proyectos trabajo con un conjunto de herramientas que me
+          permiten organizar ideas, diseñar, optimizar flujos y llevar cada
+          desarrollo a un nivel profesional. Utilizo plataformas como Notion
+          para la planificación y documentación, Postman para pruebas de APIs y
+          Firebase para manejar autenticación, bases de datos y almacenamiento
+          en la nube.
+          <br />
+          <br />
+          Para el diseño visual y la creación de recursos gráficos incorporo
+          herramientas como Canva, Adobe Illustrator y Google Fonts, mientras
+          que Cloudinary me permite optimizar y gestionar imágenes de forma
+          eficiente. Complemento este flujo con Google Analytics y Google Forms
+          para analizar métricas, recopilar información y mejorar la experiencia
+          del usuario. Además, uso Draw.io para diagramar estructuras, flujos y
+          sistemas, lo que me ayuda a planificar soluciones claras y bien
+          fundamentadas.
+          <br />
+          <br />
+          Cada una de estas herramientas es parte esencial de mi proceso de
+          trabajo, y continuamente sigo perfeccionándome en su uso para ofrecer
+          resultados cada vez más sólidos, organizados y visualmente cuidados.
+        </p>
+
+        <div className="font-quantico font-semibold flex items-center text-center justify-center">
           <Carousel3D items={items} />
         </div>
 

@@ -19,7 +19,6 @@ const SkillsPage = () => {
         <div className="w-full flex-1 border-x border-gray-300 dark:border-gray-600">
           <Profile />
           <HeroSection />
-          <TargetTechs />
           <SkillsSection />
           <Social />
         </div>
