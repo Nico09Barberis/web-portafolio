@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 
-import gestorTurnos from "../assets/proyects/gestor-turnos.png";
-import unlook from "../assets/proyects/unlook.png";
+
 import tienda500millas from "../assets/proyects/500millas.png";
+import dyfcelebraciones from "../assets/proyects/dyfcelebraciones.webp"
+import nexWeb from "../assets/proyects/nex.webp";
+
 
 // Componente WorkCard con efecto 3D
 const WorkCard = ({ image, title, description, demoUrl }) => {
@@ -66,21 +68,21 @@ const LastWorks = () => {
     {
       image: tienda500millas,
       title: "500millas",
-      description: "Tienda online",
+      description: "Pagina web institucional para una empresa dedicada a la produccion de alfajores santafesinos y panificados artesanales.",
       demoUrl: "https://500millasarg.com.ar/",
     },
     {
-      image: unlook,
-      title: "Ecommerce Un Look",
-      description: "Tienda online de indumentaria urbana y deportiva.",
-      demoUrl: "https://unlook.ar/",
+      image: dyfcelebraciones,
+      title: "DyF Celebraciones",
+      description: "Sitio web institucional para DyF Celebraciones.",
+      demoUrl: "https://dyfcelebraciones.com.ar/",
     },
     {
-      image: gestorTurnos,
-      title: "Gestor de turnos",
+      image: nexWeb,
+      title: "NEX Servicios Aéreos",
       description:
-        "Sistema de gestión de turnos para profesionales y consultorios",
-      demoUrl: "https://gestor-turnos-flame.vercel.app/",
+        "Desarrollo de sitio web institucional para NEX, una empresa especializada en servicios audiovisuales con drones. La plataforma está enfocada en comunicar propuestas de valor, presentar planes de servicio y facilitar la captación de clientes mediante una experiencia clara, visual y orientada a conversión.",
+      demoUrl: "https://nexairdata.com.ar/",
     },
   ];
 

@@ -4,9 +4,11 @@ import { ArrowRight } from "lucide-react";
 import morseExpress from "../assets/proyects/morse-express.png";
 import clavePro from "../assets/proyects/clave-pro.png";
 import reciclApp from "../assets/proyects/reciclapp.png";
-import gestorTurnos from "../assets/proyects/gestor-turnos.png";
+import nexWeb from "../assets/proyects/nex.webp";
 import tienda500millas from "../assets/proyects/500millas.png";
 import unlook from "../assets/proyects/unlook.png";
+import systemRegister from "../assets/proyects/system-register.png";
+import dyfcelebraciones from "../assets/proyects/dyfcelebraciones.webp"
 
 // Proyectos personales
 const personalWorks = [
@@ -38,14 +40,6 @@ const personalWorks = [
     techs: ["React", "Tailwind", "Vite"],
   },
   {
-    title: "Gestor de turnos",
-    description:
-      "Aplicación web que permite a pacientes y profesionales gestionar turnos de forma intuitiva y práctica.",
-    img: gestorTurnos,
-    demo: "https://gestor-turnos-flame.vercel.app/",
-    techs: ["React", "Tailwind", "Vite", "Node", "Express", "MongoDB"],
-  },
-  {
     title: "Ecommerce Un Look",
     description:
       "Tienda online de indumentaria urbana y deportiva. Diseño moderno, catálogo dinámico y experiencia de compra optimizada para dispositivos móviles.",
@@ -55,13 +49,36 @@ const personalWorks = [
   },
   {
     title: "500 millas",
-    
     description:
       "Página web institucional para una empresa dedicada a la producción de alfajores santafesinos y panificados artesanales. Incluye secciones de inicio, productos y mas.",
     img: tienda500millas,
     demo: "https://500millasarg.com.ar/",
     techs: ["React", "Tailwind", "Vite", "Google forms"],
   },
+  {
+    title: "Sistema de checkin/checkout",
+    description:
+      "Sistema que permite gestionar empleados y registrar sus horarios de entrada y salida mediante un PIN único. Incluye panel de administración para crear y listar empleados, y registro automático de check-in/check-out.",
+    img: systemRegister,
+    demo: "https://500millasarg.com.ar/",
+    techs: ["React", "Tailwind", "Next", "Prisma", "PostgreSQL"],
+  },
+  {
+    title: "Web institucional - DyF Celebraciones",
+    description:
+      "Sitio web institucional desarrollado para DyF Celebraciones, una empresa dedicada a la organización y decoración de eventos. La web presenta sus servicios, portfolio visual de trabajos realizados y canales de contacto, con un diseño moderno, responsive y enfocado en transmitir profesionalismo y generar consultas.",
+    img: dyfcelebraciones,
+    demo: "https://dyfcelebraciones.com.ar/", // reemplazar por la URL real
+    techs: ["React", "Next.js", "Tailwind CSS"],
+  },
+  {
+  title: "Web institucional - NEX Servicios Aéreos",
+  description:
+    "Desarrollo de sitio web institucional para NEX, una empresa especializada en servicios audiovisuales con drones. La plataforma está enfocada en comunicar propuestas de valor, presentar planes de servicio y facilitar la captación de clientes mediante una experiencia clara, visual y orientada a conversión.",
+  img: nexWeb,
+  demo: "https://nexairdata.com.ar/", // reemplazar por la URL real
+  techs: ["React", "Next.js", "Tailwind CSS"],
+}
 ];
 
 // Colaboraciones
